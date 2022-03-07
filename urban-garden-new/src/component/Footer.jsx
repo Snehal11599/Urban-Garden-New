@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="card bg-dark text-white" style={{ marginTop: "100px" }}>
                 <img src="/assets/HomeImages/background.jpg" className="card-img" alt="..." />
                 <div className="card-img-overlay">
-                    <h1 className="card-title">Have Problem with your Gardening?</h1>
+                    <h1 className="card-title" style={{color:"#82B440",font:"serif"}} >Have Problem with your Gardening?</h1>
                     <p className="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores rerum
                         asperiores dolorum voluptates, assumenda totam magnam voluptas, itaque eos nulla adipisci quisquam,
                         placeat praesentium animi at ex quos alias dignissimos!</p>
