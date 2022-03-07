@@ -6,7 +6,7 @@ const Carousel = () => {
             <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="/assets1/HomeImages/home01.jpg" className="d-block w-100" alt="..." />
+                        <img src="/assets/HomeImages/home01.jpg" className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
                             <h1>We Are Gaco LandScaping</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam delectus unde labore sint cumque deserunt quae possimus placeat ut?</p>
@@ -17,7 +17,7 @@ const Carousel = () => {
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src="/assets1/HomeImages/home02.jpg" className="d-block w-100" alt="..." />
+                        <img src="/assets/HomeImages/home02.jpg" className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
                             <h1>LandScaping and Gardening</h1>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, est sequi rerum ve</p>
@@ -28,7 +28,7 @@ const Carousel = () => {
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src="/assets1/HomeImages/home03.jpg" className="d-block w-100" alt="..." />
+                        <img src="/assets/HomeImages/home03.jpg" className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
                             <h1>High Quality And Guaranted</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reprehenderit minima debitis fugit perspiciatis.</p>

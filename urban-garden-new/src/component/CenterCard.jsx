@@ -7,7 +7,7 @@ const CenterCard = () => {
     return (
         <div className='container'>
             <h1>Why Choose Us?</h1>
-            <img src="/assets1/HomeImages/icon.png" alt='..' />
+            <img src="/assets/HomeImages/icon.png" alt='..' />
             <h3>Every case is very important to us and we always take care of them seriously.</h3>
             <div className="row row-cols-1 row-cols-md-3 g-4 " style={{ margin: "75px" }}>
                 <div className="col">
