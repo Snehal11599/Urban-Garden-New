@@ -12,7 +12,7 @@ const CenterCard = () => {
             <div className="row row-cols-1 row-cols-md-3 g-4 " style={{ margin: "75px" }}>
                 <div className="col">
                     <div className="card">
-                        <img src="..." className="card-img-top" alt="..." />
+                        <i className="fa fa-globe" aria-hidden="true"></i>
                         <div className="card-body">
                             <h5 className="card-title">Affordabel Pricing</h5>
                             <p className="card-text">Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.</p>
@@ -21,7 +21,7 @@ const CenterCard = () => {
                 </div>
                 <div className="col">
                     <div className="card">
-                        <img src="..." className="card-img-top" alt="..." />
+                        <i className="fa fa-globe" aria-hidden="true"></i>
                         <div className="card-body">
                             <h5 className="card-title">The Best in Pekanbaru</h5>
                             <p className="card-text">Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.</p>
@@ -30,7 +30,7 @@ const CenterCard = () => {
                 </div>
                 <div className="col">
                     <div className="card">
-                        <img src="..." className="card-img-top" alt="..." />
+                        <i className="fa fa-globe" aria-hidden="true"></i>
                         <div className="card-body">
                             <h5 className="card-title">Certified Expert</h5>
                             <p className="card-text">Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.</p>
@@ -39,7 +39,7 @@ const CenterCard = () => {
                 </div>
                 <div className="col">
                     <div className="card">
-                        <img src="..." className="card-img-top" alt="..." />
+                        <i className="fa fa-globe" aria-hidden="true"></i>
                         <div className="card-body">
                             <h5 className="card-title">High Quality Services</h5>
                             <p className="card-text">Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.</p>
