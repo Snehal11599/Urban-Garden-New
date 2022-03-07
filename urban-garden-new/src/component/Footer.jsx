@@ -7,9 +7,14 @@ const Footer = () => {
                 <img src="/assets/HomeImages/background.jpg" className="card-img" alt="..." />
                 <div className="card-img-overlay">
                     <h1 className="card-title">Have Problem with your Gardening?</h1>
-                    <p className="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores rerum
-                        asperiores dolorum voluptates, assumenda totam magnam voluptas, itaque eos nulla adipisci quisquam,
+                    <div md="3">
+                    <p className="card-text">Lorem ipsum dolor, sit amet
+                     consectetur adipisicing elit. Dolores rerum
+                        asperiores dolorum voluptates, assumenda
+                         totam magnam voluptas, itaque eos nulla 
+                         adipisci quisquam,
                         placeat praesentium animi at ex quos alias dignissimos!</p>
+                        </div>
                     <div className='d-grid gap-2 col-3 mx-auto'>
                         <button className="btn btn-outline-success text-white">CONTACT NOW</button>
                     </div>
