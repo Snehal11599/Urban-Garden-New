@@ -6,6 +6,7 @@ import { GiThreeLeaves } from "react-icons/gi";
 const style = {
     color: "#82B440", position: "center", keyboard: "focusable"
 }
+
 const CenterCard = () => {
 
     return (
@@ -52,7 +53,7 @@ const CenterCard = () => {
                             </div>
                         </div>
 
-                    </div>
+                  </div>
                 </div>
             </div>
         </div>
