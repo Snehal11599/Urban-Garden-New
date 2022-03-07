@@ -4,7 +4,9 @@ import { NavLink } from 'react-router-dom'
 
 export default function Img(props) {
   return (
-    <>
+    
+      <>
+   
       <div className="card bg-dark text-white" style={{margin:"40px 0px 40px 0px" }}>
         <img src="./assets/service/garden.webp" style={{ height: "300px", width: "100%" }} className="card-img" alt="..." />
         <div className="card-img-overlay">
@@ -17,5 +19,6 @@ export default function Img(props) {
         </div>
       </div>
     </>
+
   )
 }
