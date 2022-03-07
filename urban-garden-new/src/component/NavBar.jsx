@@ -35,7 +35,9 @@ export default function NavBar() {
                             </li>
 
                         </ul>
-
+                        <div className='d-grid gap-2 col-2 mx-auto'>
+                        <button className="btn btn-outline-success text-white">GET FREE QUOTES</button>
+                    </div>
                     </div>
                 </div>
             </nav>

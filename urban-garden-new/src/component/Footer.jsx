@@ -10,11 +10,11 @@ const Footer = () => {
                     <p className="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores rerum
                         asperiores dolorum voluptates, assumenda totam magnam voluptas, itaque eos nulla adipisci quisquam,
                         placeat praesentium animi at ex quos alias dignissimos!</p>
-                    <div className='d-grid gap-2 col-6 mx-auto'>
+                    <div className='d-grid gap-2 col-3 mx-auto'>
                         <button className="btn btn-outline-success text-white">CONTACT NOW</button>
                     </div>
-                    <div className="col-md-4">
-                        <img src="/assets/HomeImages/bg1.png" className="img-fluid rounded-start " style={{ float: "right" }} alt="..." />
+                    <div className="col-md-20">
+                        <img src="/assets/HomeImages/bg1.png" className="img-fluid rounded-start " style={{ float: "right-top" }} alt class="img-fluid" />
                     </div>
                 </div>
             </div>
