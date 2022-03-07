@@ -1,15 +1,17 @@
 import React from 'react'
+import Img from './Img'
 import Carousel from './Carousel'
 import CenterCard from './CenterCard'
 
 
-const Home = () => {
+export default function Home() {
     return (
         <div>
-            <Carousel />
+            <>
+                <Img />
+               <Carousel />
             <CenterCard />
+            </>
         </div>
     )
 }
-
-export default Home
