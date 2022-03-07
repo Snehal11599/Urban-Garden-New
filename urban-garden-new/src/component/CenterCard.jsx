@@ -2,7 +2,6 @@ import React from 'react'
 
 
 
-
 const CenterCard = () => {
     return (
         <div className='container'>
