@@ -1,7 +1,6 @@
 import React from 'react'
 
 
-
 const CenterCard = () => {
     return (
         <div className='container'>
@@ -44,9 +43,7 @@ const CenterCard = () => {
                             <p className="card-text">Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.</p>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     )
