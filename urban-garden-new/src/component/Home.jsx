@@ -9,8 +9,8 @@ export default function Home() {
         <div>
             <>
                 <Img />
-               <Carousel />
-            <CenterCard />
+                <Carousel />
+                <CenterCard />
             </>
         </div>
     )

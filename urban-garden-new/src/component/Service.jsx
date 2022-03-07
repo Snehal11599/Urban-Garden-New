@@ -6,7 +6,6 @@ export default function Service() {
     return (
         <div>
             <Img />
-
             <br></br>
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 <div className="col">
