@@ -1,4 +1,3 @@
-
 import './App.css';
 import { Route, Routes } from 'react-router-dom'
 import NavBar from './component/NavBar';
@@ -18,6 +17,7 @@ function App() {
       </Routes>
 
     </>
-
+  )
+}
 
 export default App;
