@@ -44,6 +44,45 @@ export default function Service() {
                         </div>
                     </div>
                 </div>
+                
+                <div className="col">
+                    <div className="card h-100">
+                        <img src="./assets/service/Irrigation and Drainage.jpg" className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Irragation and Drainage</h5>
+                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div className="card-footer">
+                            <small className="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col">
+                    <div className="card h-100">
+                        <img src="./assets/service/img3.jpg" className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Stone and Hardscaping</h5>
+                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div className="card-footer">
+                            <small className="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col">
+                    <div className="card h-100">
+                        <img src="./assets/service/Rubbish Removal.jpg" className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Rubbish and Removal</h5>
+                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div className="card-footer">
+                            <small className="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
