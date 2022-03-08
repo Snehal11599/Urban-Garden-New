@@ -5,7 +5,7 @@ import CenterImages from './CenterImages'
 const Gallery = () => {
   return (
     <div>
-        <Banner/>
+        <Banner title="Gallery"/>
         <CenterImages/>
         
         
