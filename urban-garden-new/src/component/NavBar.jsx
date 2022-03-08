@@ -23,10 +23,15 @@ export default function NavBar() {
                                     Pages
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a className="dropdown-item" to="/pages">GALLERY</a></li>
-                                    <li><a className="dropdown-item" to="/">TESTIMONIALS</a></li>
-                                    <li><hr className="dropdown-divider" /></li>
-                                    <li><a className="dropdown-item" to="/">FAQ</a></li>
+                                    <li className="nav-item py-md-2">
+                                        <NavLink className="nav-link" to="/gallery">Gallery</NavLink>
+                                    </li>
+                                    <li className="nav-item py-md-2">
+                                        <NavLink className="nav-link" to="/testimonials">Testimonials</NavLink>
+                                    </li>
+                                    <li className="nav-item py-md-2">
+                                        <NavLink className="nav-link" to="/faq">FAQ</NavLink>
+                                    </li>
                                 </ul>
                             </li>
                             <li className="nav-item py-md-2">

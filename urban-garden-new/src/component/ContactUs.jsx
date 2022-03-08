@@ -1,11 +1,11 @@
 import React from 'react'
 import ContactForm from './ContactForm'
-import Img from './Img'
+import Banner from './Banner'
 
 const ContactUs = () => {
   return (
     <div>
-        <Img  title="Contact Us"/>
+        <Banner  title="Contact Us"/>
         <ContactForm/>
     </div>
   )
