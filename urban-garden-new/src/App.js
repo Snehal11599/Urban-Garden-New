@@ -6,11 +6,13 @@ import About from './component/About';
 import Service from './component/Service';
 import Footer from './component/Footer';
 import ContactUs from './component/ContactUs';
+import Gallery from './component/Gallery';
 
 function App() {
   return (
     <>
       <NavBar />
+      
       <Routes>
         <Route path="/" element={<Home />}  />
         <Route path="/about" element={<About />}/>
@@ -18,6 +20,7 @@ function App() {
         <Route exact path="/contactus" element={<ContactUs/>}/>
       </Routes>
       <Footer/>
+      <Gallery/>
 
     </>
   )
