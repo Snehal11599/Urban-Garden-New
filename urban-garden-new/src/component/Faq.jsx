@@ -1,8 +1,13 @@
 import React from 'react'
+import AccordionFaq from './AccordionFaq'
+import Banner from './Banner'
 
 const Faq = () => {
   return (
-    <div>Faq</div>
+    <div>
+      <Banner title="FAQ"/>
+      <AccordionFaq/>
+    </div>
   )
 }
 
