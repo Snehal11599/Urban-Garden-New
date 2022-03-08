@@ -35,6 +35,9 @@ export default function NavBar() {
                             <li className="nav-item py-md-2">
                                 <NavLink className="nav-link" to="/service">Services</NavLink>
                             </li>
+                            <li className="nav-item py-md-2">
+                                <NavLink className="nav-link" to="/contactus">Contact Us</NavLink>
+                            </li>
 
                         </ul>
 
