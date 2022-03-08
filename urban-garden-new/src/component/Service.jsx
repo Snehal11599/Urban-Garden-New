@@ -1,12 +1,12 @@
 import React from 'react'
-import Img from './Img'
+import Banner from './Banner'
 
 
 export default function Service() {
     return (
         <div>
             
-            <Img title="Services"/>
+            <Banner title="Services"/>
             <br></br>
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 <div className="col">

@@ -1,11 +1,11 @@
 import React from 'react'
-import Img from './Img'
+import Banner from './Banner'
 
 export default function About() {
   return (
 
     <div>
-      <Img title="About Us" />
+      <Banner title="About Us" />
       <div className="card mb-3 " >
         <div className="row g-0">
           <div className="col-md-4">
