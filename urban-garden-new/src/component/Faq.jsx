@@ -1,10 +1,9 @@
 import React from 'react'
 
-export default function Faq() {
+const Faq = () => {
   return (
-    <div>
-      
-    </div>
+    <div>Faq</div>
   )
 }
 
+export default Faq

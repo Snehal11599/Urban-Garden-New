@@ -10,57 +10,56 @@ const ContactForm = () => {
     return (
         <>
             <div className="section-heading text-center mb-4">
-                <h1 >Send Us A Message</h1>
-                <GiThreeLeaves size="3rem" style={style} />
+                <h1 className='py-4'>Send Us A Message</h1>
+                <GiThreeLeaves size="3rem" style={style}  />
                 <p className="text-muted">Consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta.</p>
                 <p className="text-muted">Quisque ut nulla at nunc lacinia.</p>
             </div>
             <div>
-                <form className="row g-3">
-                    <div className="col-md-6">
-                        <label for="inputEmail4" className="form-label">Email</label>
-                        <input type="email" className="form-control" id="inputEmail4" />
-                    </div>
-                    <div className="col-md-6">
-                        <label for="inputPassword4" className="form-label">Password</label>
-                        <input type="password" className="form-control" id="inputPassword4" />
-                    </div>
-                    <div className="col-12">
-                        <label for="inputAddress" className="form-label">Address</label>
-                        <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" />
-                    </div>
-                    <div className="col-12">
-                        <label for="inputAddress2" className="form-label">Address 2</label>
-                        <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
-                    </div>
-                    <div className="col-md-6">
-                        <label for="inputCity" className="form-label">City</label>
-                        <input type="text" className="form-control" id="inputCity" />
-                    </div>
-                    <div className="col-md-4">
-                        <label for="inputState" className="form-label">State</label>
-                        <select id="inputState" className="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div className="col-md-2">
-                        <label for="inputZip" className="form-label">Zip</label>
-                        <input type="text" className="form-control" id="inputZip" />
-                    </div>
-                    <div className="col-12">
-                        <div className="form-check">
-                            <input className="form-check-input" type="checkbox" id="gridCheck" />
-                            <label className="form-check-label" for="gridCheck">
-                                Check me out
-                            </label>
+                <form action="#" className="form-contact py-5" id="contactForm" >
+                    <div className="row">
+                        <div className="col-sm-6 col-md-6">
+                            <div className="form-group has-error">
+                                <input type="text" className="form-control" id="p_name" placeholder="Enter Name" required=""/>
+                                    <div className="help-block with-errors"><ul className="list-unstyled"></ul></div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-md-6">
+                            <div className="form-group">
+                                <input type="email" className="form-control" id="p_email" placeholder="Enter Email" required=""/>
+                                    <div className="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-md-6">
+                            <div className="form-group">
+                                <input type="text" className="form-control" id="p_phone" placeholder="Enter Phone Number"/>
+                                    <div className="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-md-6">
+                            <div className="form-group">
+                                <select className="form-control" id="p_service">
+                                    <option value="0">Choose service you are interested in</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <div className="col-12">
-                        <button type="submit" className="btn btn-primary">Sign in</button>
+                    <div className="form-group py-4">
+                        <textarea id="p_message" className="form-control" rows="6" placeholder="Enter Your Message"></textarea>
+                        <div className="help-block with-errors"></div>
+                    </div>
+                    <div className="form-group">
+                        <div className="text-center">
+                            <div id="success"></div>
+                            <button type="submit" className="btn btn-success"style={{pointerEvents:" all", cursor: "pointer"}}>SEND MESSAGE</button>
+                        </div>
                     </div>
                 </form>
             </div>
+
         </>
     )
 }
