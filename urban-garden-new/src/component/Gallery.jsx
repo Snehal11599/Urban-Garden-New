@@ -1,8 +1,13 @@
 import React from 'react'
+import Banner from './Banner'
+import CenterImages from './CenterImages'
 
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <div>
+        <Banner/>
+        <CenterImages/>
+    </div>
   )
 }
 
