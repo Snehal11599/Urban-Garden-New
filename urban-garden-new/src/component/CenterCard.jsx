@@ -8,7 +8,6 @@ const style = {
 }
 
 const CenterCard = () => {
-
     return (
         <div className="section-heading text-center mb-4" style={{ margin: "70px", padding: "20px", font: "serif" }}>
             <h1>Why Choose Us? </h1>
