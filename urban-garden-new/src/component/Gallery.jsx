@@ -7,6 +7,9 @@ const Gallery = () => {
     <div>
         <Banner/>
         <CenterImages/>
+        
+        
+        
     </div>
   )
 }
