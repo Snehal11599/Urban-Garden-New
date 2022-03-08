@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from './Banner'
 
-const Card = () => {
+const Testimonials = () => {
   return (
 
     <div>
@@ -83,4 +83,4 @@ const Card = () => {
   )
 }
 
-export default Card
+export default Testimonials
