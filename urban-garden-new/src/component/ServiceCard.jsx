@@ -1,0 +1,45 @@
+import React, { useEffect, useState } from 'react'
+
+const ServiceCard = () => {
+
+    const [service, setService] = useState([])
+    //function for get service card data
+    const getService = async () => {
+        const response = await fetch('http://localhost:3000/service')
+        setService(await response.json());
+    }
+
+    useEffect(() => {
+        getService();
+    }, [])
+
+    return (
+        <div>
+            <div className="row row-cols-1 row-cols-md-3 g-4">
+                {
+                    service.map((service) => {
+                        return (
+                            <div key={service.id}>
+                                <div className="col">
+                                    <div className="card h-100">
+                                        <img src={service.image} className="card-img-top" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className='card-title'>Service ID:{service.id}</h5>
+                                            <h5 className="card-title">{service.title}</h5>
+                                            <p className="card-text">{service.decription}</p>
+                                        </div>
+                                        <div className="card-footer">
+                                            <small className="text-muted"></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </div>
+    )
+}
+
+export default ServiceCard
