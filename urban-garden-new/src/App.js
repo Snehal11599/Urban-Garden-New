@@ -9,6 +9,8 @@ import ContactUs from './component/ContactUs';
 import Gallery from './component/Gallery';
 import Testimonials from './component/Testimonials';
 import Faq from './component/Faq';
+import News from './component/News';
+import SingleNews from './component/SingleNews';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route exact path='/gallery' element={<Gallery />} />
         <Route exact path='/testimonials' element={<Testimonials />} />
         <Route exact path='/faq' element={<Faq/>} />
+        <Route exact path='/news' element={<News/>} />
+        <Route exact path='/singlenews' element={<SingleNews/>} />
       </Routes>
       <Footer />
 

@@ -6,10 +6,7 @@ const Gallery = () => {
   return (
     <div>
         <Banner title="Gallery"/>
-        <CenterImages/>
-        
-        
-        
+        <CenterImages/>    
     </div>
   )
 }
