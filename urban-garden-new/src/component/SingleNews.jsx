@@ -1,12 +1,12 @@
 import React from 'react'
 import Banner from './Banner'
 
-const News = () => {
+const SingleNews = () => {
   return (
     <div>
-      <Banner title="News"/>
+        <Banner title="Single news"/>
     </div>
   )
 }
 
-export default News
+export default SingleNews
