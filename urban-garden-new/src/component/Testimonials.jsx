@@ -3,9 +3,8 @@ import Banner from './Banner'
 
 const Testimonials = () => {
   return (
-
     <div>
-      <Banner />
+      <Banner title="Testimonials" />
       <div className="card mb-3" style={{ width: "540px" }}>
         <div className="row g-0">
           <div className="col-md-4">
@@ -20,8 +19,6 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-
-
       <div className="card mb-3" style={{ width: "540px" }}>
         <div className="row g-0">
           <div className="col-md-4">
@@ -36,8 +33,6 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-
-
       <div className="card mb-3" style={{ width: "540px" }}>
         <div className="row g-0">
           <div className="col-md-4">
@@ -52,8 +47,6 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-
-
       <div className="card mb-3" style={{ width: "540px" }}>
         <div className="row g-0">
           <div className="col-md-4">
@@ -68,16 +61,7 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-  
-   
+    </div>
   )
 }
-
 export default Testimonials
