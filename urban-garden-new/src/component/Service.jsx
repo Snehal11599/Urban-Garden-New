@@ -5,7 +5,8 @@ import Img from './Img'
 export default function Service() {
     return (
         <div>
-            <Img />
+            
+            <Img title="Services"/>
             <br></br>
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 <div className="col">
