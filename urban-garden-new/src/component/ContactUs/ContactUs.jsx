@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactForm from './ContactForm'
-import Banner from './Banner'
+import Banner from '../CommonComponent/Banner'
 
 const ContactUs = () => {
   return (

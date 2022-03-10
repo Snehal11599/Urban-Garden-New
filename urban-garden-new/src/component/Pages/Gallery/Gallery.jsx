@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from './Banner'
+import Banner from '../../CommonComponent/Banner'
 import CenterImages from './CenterImages'
 
 const Gallery = () => {

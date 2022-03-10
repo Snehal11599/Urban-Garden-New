@@ -1,9 +1,9 @@
 import React from 'react'
-import Banner from './Banner'
-import LatestPost from './LatestPost'
+import Banner from '../../CommonComponent/Banner'
+import LatestPost from '../../CommonComponent/LatestPost'
 import NewsCard from './NewsCard'
-import NewsItem from './NewsItem'
-import Tags from './Tags'
+import NewsItem from '../../CommonComponent/NewsItem'
+import Tags from '../../CommonComponent/Tags'
 
 const News = () => {
   return (

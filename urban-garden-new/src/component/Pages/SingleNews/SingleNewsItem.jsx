@@ -1,9 +1,9 @@
 import React from 'react'
-import LatestPost from './LatestPost'
-import LeaveComments from './LeaveComments'
-import NewsItem from './NewsItem'
+import LatestPost from '../../CommonComponent/LatestPost'
+import LeaveComments from '../../CommonComponent/LeaveComments'
+import NewsItem from '../../CommonComponent/NewsItem'
 import './SingleNewsItem.css'
-import Tags from './Tags'
+import Tags from '../../CommonComponent/Tags'
 
 
 
@@ -50,7 +50,7 @@ const SingleNewsItem = () => {
                             </div>
                         </div>
                         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4" >
-                            <LatestPost />
+                            <LatestPost/>
                             <Tags />
                             <NewsItem/>
                         </div>

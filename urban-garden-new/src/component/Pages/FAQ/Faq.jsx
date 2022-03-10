@@ -1,6 +1,6 @@
 import React from 'react'
 import AccordionFaq from './AccordionFaq'
-import Banner from './Banner'
+import Banner from '../../CommonComponent/Banner'
 
 const Faq = () => {
   return (

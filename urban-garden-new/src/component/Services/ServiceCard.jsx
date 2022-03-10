@@ -5,7 +5,7 @@ const ServiceCard = () => {
     const [service, setService] = useState([])
     //function for get service card data
     const getService = async () => {
-        const response = await fetch('http://localhost:3000/service')
+        const response = await fetch('http://localhost:3002/service')
         setService(await response.json());
     }
 
