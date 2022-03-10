@@ -5,15 +5,15 @@ const NewsCard = () => {
     const [posts, setPosts] = useState([])
 
 
-    const news= async()=>{
-       const response= await fetch( 'http://localhost:3000/articles')
-       setPosts(await response.json())
-        }
+    const getPost = async () => {
+        const response = await fetch('http://localhost:3001/articles')
+        setPosts(await response.json());
+    }
 
-    useEffect=(()  => {
-        news()
-
+    useEffect(() => {
+        getPost();
     }, [])
+
     return (
         <div>
             <div className="card" style={{ width: "50rem" }}>
