@@ -2,7 +2,7 @@ import React from 'react'
 import LatestPost from './LatestPost'
 import LeaveComments from './LeaveComments'
 import NewsItem from './NewsItem'
-import './SingleNewsItem.css'
+//import '../../SingleNews/SingleNews.css'
 import Tags from './Tags'
 
 

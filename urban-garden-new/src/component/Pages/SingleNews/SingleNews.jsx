@@ -1,6 +1,8 @@
 import React from 'react'
-import Banner from './Banner'
+import Banner from '../../CommonComponent/Banner'
 import SingleNewsItem from './SingleNewsItem'
+
+
 
 const SingleNews = () => {
   return (

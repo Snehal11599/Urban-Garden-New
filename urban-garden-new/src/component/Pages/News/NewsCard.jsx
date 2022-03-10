@@ -5,12 +5,13 @@ const NewsCard = () => {
     const [posts, setPosts] = useState([])
 
 
+    const news= async()=>{
+       const response= await fetch( 'http://localhost:3000/articles')
+       setPosts(await response.json())
+        }
 
-
-    useEffect(() => {
-        const url = 'http://localhost:3000/articles';
-        fetch(url).then(resp => resp.json())
-            .then(resp => setPosts(resp))
+    useEffect=(()  => {
+        news()
 
     }, [])
     return (
