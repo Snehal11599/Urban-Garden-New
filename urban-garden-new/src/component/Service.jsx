@@ -6,7 +6,7 @@ import ServiceCard from './ServiceCard'
 export default function Service() {
     return (
         <div>
-            <Banner />
+            <Banner title="Service"/>
             <br></br>
             <ServiceCard />
         </div>
