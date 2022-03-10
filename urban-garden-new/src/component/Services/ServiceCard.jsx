@@ -7,6 +7,7 @@ const ServiceCard = () => {
     const getService = async () => {
         const response = await fetch('http://localhost:3002/service')
         setService(await response.json());
+        console.log(response)
     }
 
     useEffect(() => {

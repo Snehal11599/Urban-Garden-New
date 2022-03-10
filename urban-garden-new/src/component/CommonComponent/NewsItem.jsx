@@ -42,8 +42,8 @@ const NewsItem = () => {
             <div className="card" style={{ width: "50rem" }}>
                 <div className="card-body">
                     <h4 className="card-title">Archive</h4>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div className="dropdown">
+                        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                             Year
                         </button>
                         <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
