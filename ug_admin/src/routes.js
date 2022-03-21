@@ -25,10 +25,13 @@ import Maps from "views/Map.js";
 import UserPage from "views/User.js";
 import UpgradeToPro from "views/Upgrade.js";
 import Add_Articles from "views/Add_Articles";
-//import Urban_Articles from "./views/Urban_Articles";
-//import TableData from "./views/TableData";
+import Update from 'views/Update'
 import ArticleTable from "./views/ArticleTable";
-
+import Material_Table from "./views/Material_Table";
+import BasicTable from "./views/BasicTable"
+import UserTable from "./views/UserTable";
+import Edit from "./views/Edit";
+import AddArticles from './views/AddArticles';
 var routes = [
   {
     path: "/dashboard",
@@ -90,18 +93,32 @@ var routes = [
   // 
   {
     path: "/ArticleTable",
-    name: "ArticleTable",
+    name: "Article_Table",
     icon: "nc-icon nc-paper",
-    component: ArticleTable,
+    component:ArticleTable,
     layout: "/admin",
    },
   {
-    path: "/Add_Articles",
-    name: "Add_Articles",
+    path: "/AddArticles",
+    name: "AddArticles",
     icon: "nc-icon nc-paper",
-    component: Add_Articles,
+    component:AddArticles,
     layout: "/admin",
-  },
+  }
+  // ,{
+  //   path: "/UpdateTable",
+  //   name: "UpdateTable",
+  //   icon: "nc-icon nc-paper",
+  //   component:Update,
+  //   layout: "/admin",
+  // }
+  // ,{
+  //   path: "/Edit",
+  //   name: "Edit",
+  //   icon: "nc-icon nc-paper",
+  //   component:Edit,
+  //   layout: "/admin",
+  // }
 
 ];
 export default routes;

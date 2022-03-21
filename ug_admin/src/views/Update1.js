@@ -4,27 +4,19 @@ import { useState, useEffect } from "react";
 import { useHistory, useParams } from "react-router-dom";
 
 
-const Edit = () => {
+const Update1 = () => {
     
     const { id } = useParams();
     const history = useHistory();
     const [service, setService] = useState({
-
-      id: "",
-      name: "",
-      author: "",
-      title: "",
-      decription: "",
-      url: "",
-      urlToImage: "",
-      publishedAt: "",
-      content: ""
+        title:"",
+        decription:""
     });
     useEffect(() => {
      async function getService() {
       try {
        const service = await axios.get(`http://localhost:3000/articles/${id}`)
-       // console.log(student.data);
+       // console.log(service.data);
        setService(service.data);
       } catch (error) {
        console.log("Something is Wrong");
@@ -59,7 +51,7 @@ const Edit = () => {
    <Grid container justify="center" spacing={4}>
     <Grid item md={6} xs={12}>
      <Box textAlign="center" p={2} mb={2}>
-      <Typography variant="h4">Update Service</Typography>
+      <Typography variant="h4">Update Articles</Typography>
      </Box>
      <form noValidate>
       <Grid container spacing={2}>
@@ -89,4 +81,4 @@ const Edit = () => {
  )
 }
 
-export default Edit
+export default Update1
