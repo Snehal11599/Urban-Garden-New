@@ -2,21 +2,26 @@ import { Typography, Box, makeStyles, Grid, TextField, Button } from "@material-
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useHistory, useParams } from "react-router-dom";
-
-
 const Update1 = () => {
     
     const { id } = useParams();
     const history = useHistory();
     const [service, setService] = useState({
+        id:"",
+        name:"",
+        author:"",
         title:"",
-        decription:""
+        decription:"",
+        url:"",
+        urlToImage:"",
+    publishedAt:"",
+    content:"",
     });
     useEffect(() => {
      async function getService() {
       try {
-       const service = await axios.get(`http://localhost:3000/articles/${id}`)
-       // console.log(service.data);
+        const service = await axios.get(`http://localhost:3000/articles/${id}`)
+       console.log(service.data);
        setService(service.data);
       } catch (error) {
        console.log("Something is Wrong");
@@ -60,11 +65,35 @@ const Update1 = () => {
         />
        </Grid>
        <Grid item xs={12}>
-        <TextField autoComplete="stuname" name="title" variant="outlined" required fullWidth id="title" label="Title" value={service.title} onChange={e => onTextFieldChange(e)}
+        <TextField autoComplete="name" name="name" variant="outlined" required fullWidth id="name" label="Name" value={service.name} onChange={e => onTextFieldChange(e)}
         />
        </Grid>
        <Grid item xs={12}>
-        <TextField autoComplete="email" name="decription" variant="outlined" required fullWidth id="decription" label="Description" value={service.decription} onChange={e => onTextFieldChange(e)}  />
+        <TextField autoComplete="author" name="author" variant="outlined" required fullWidth id="author" label="Author" value={service.author} onChange={e => onTextFieldChange(e)}
+        />
+       </Grid>
+       <Grid item xs={12}>
+        <TextField autoComplete="title" name="title" variant="outlined" required fullWidth id="title" label="Title" value={service.title} onChange={e => onTextFieldChange(e)}
+        />
+       </Grid>
+       <Grid item xs={12}>
+        <TextField autoComplete="decription" name="decription" variant="outlined" required fullWidth id="decription" label="Decription" value={service.decription} onChange={e => onTextFieldChange(e)}
+        />
+       </Grid>
+       <Grid item xs={12}>
+        <TextField autoComplete="url" name="url" variant="outlined" required fullWidth id="url" label="URl" value={service.url} onChange={e => onTextFieldChange(e)}
+        />
+       </Grid>
+       <Grid item xs={12}>
+        <TextField autoComplete="urlToImage" name="urlToImage" variant="outlined" required fullWidth id="UrlToImage" label="urlToImage" value={service.urlToImage} onChange={e => onTextFieldChange(e)}
+        />
+       </Grid>
+       <Grid item xs={12}>
+        <TextField autoComplete="publishedAt" name="publishedAt" variant="outlined" required fullWidth id="publishedAt" label="PublisheAt" value={service.publishedAt} onChange={e => onTextFieldChange(e)}
+        />
+       </Grid>
+       <Grid item xs={12}>
+        <TextField autoComplete="content" name="content" variant="outlined" required fullWidth id="content" label="Content" value={service.content} onChange={e => onTextFieldChange(e)}  />
        </Grid>
       </Grid>
       <Box m={3}>

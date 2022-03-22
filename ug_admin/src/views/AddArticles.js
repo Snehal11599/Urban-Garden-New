@@ -65,9 +65,7 @@ const AddArticles = () => {
        <Grid item xs={12}>
         <TextField autoComplete="email" name="decription" variant="outlined" required fullWidth id="description" label="Description" onChange={e => onTextFieldChange(e)}  />
        </Grid>
-       <Grid item xs={12}>
-        <TextField autoComplete="email" name="urlToImage" variant="outlined" required fullWidth id="urlToImage" label="Description" onChange={e => onTextFieldChange(e)}  />
-       </Grid>
+       
 
        <Grid item xs={12}>
         <TextField autoComplete="email" name="author" variant="outlined" required fullWidth id="author" label="author" onChange={e => onTextFieldChange(e)}  />

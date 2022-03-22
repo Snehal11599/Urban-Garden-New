@@ -25,13 +25,14 @@ import Maps from "views/Map.js";
 import UserPage from "views/User.js";
 import UpgradeToPro from "views/Upgrade.js";
 import Add_Articles from "views/Add_Articles";
-import Update from 'views/Update'
+import Update1 from 'views/Update1'
 import ArticleTable from "./views/ArticleTable";
 import Material_Table from "./views/Material_Table";
 import BasicTable from "./views/BasicTable"
 import UserTable from "./views/UserTable";
 import Edit from "./views/Edit";
 import AddArticles from './views/AddArticles';
+import Service from './views/Service'
 var routes = [
   {
     path: "/dashboard",
@@ -112,13 +113,20 @@ var routes = [
   //   component:Update,
   //   layout: "/admin",
   // }
-  // ,{
-  //   path: "/Edit",
-  //   name: "Edit",
-  //   icon: "nc-icon nc-paper",
-  //   component:Edit,
-  //   layout: "/admin",
-  // }
+  ,{
+    path: "/Update1",
+    name: "Update1",
+    icon: "nc-icon nc-paper",
+    component:Update1,
+    layout: "/admin",
+  }
+  ,{
+    path: "/Service",
+    name: "Service",
+    icon: "nc-icon nc-paper",
+    component:Service,
+    layout: "/admin",
+  }
 
 ];
 export default routes;
