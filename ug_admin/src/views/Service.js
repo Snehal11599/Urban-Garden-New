@@ -47,7 +47,14 @@ const Service = () => {
       <TableRow style={{ backgroundColor: "#616161" }}>
        <TableCell align="center" >Id</TableCell>
        <TableCell >Title</TableCell>
-       <TableCell align="center" >Description</TableCell>
+       <TableCell align="center" >Name</TableCell>
+       <TableCell align="center" >Author</TableCell>
+       <TableCell align="center" >Title</TableCell>
+       <TableCell align="center" >desp</TableCell>
+       <TableCell align="center" >URL</TableCell>
+       <TableCell align="center" >urlTOImage</TableCell>
+       <TableCell align="center" >publishedAt</TableCell>
+       <TableCell align="center" >content</TableCell>
        <TableCell align="center" >Action</TableCell>
       </TableRow>
      </TableHead>
@@ -57,8 +64,14 @@ const Service = () => {
         return (
          <TableRow key={i}>
           <TableCell align="center">{service.id}</TableCell>
+          <TableCell align="center">{service.name}</TableCell>
+          <TableCell align="center">{service.author}</TableCell>
           <TableCell align="center">{service.title}</TableCell>
-          <TableCell align="center">{service.decription}</TableCell>
+          <TableCell align="center">{service.desp}</TableCell>
+          <TableCell align="center">{service.url}</TableCell>
+          <TableCell align="center">{service.urlToImage}</TableCell>
+          <TableCell align="center">{service.publishedAt}</TableCell>
+          <TableCell align="center">{service.content}</TableCell>
           <TableCell align="center">
            
            <Tooltip title="Edit">

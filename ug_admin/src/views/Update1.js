@@ -3,7 +3,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useHistory, useParams } from "react-router-dom";
 const Update1 = () => {
-    
     const { id } = useParams();
     const history = useHistory();
     const [service, setService] = useState({
@@ -11,7 +10,7 @@ const Update1 = () => {
         name:"",
         author:"",
         title:"",
-        decription:"",
+        desp:"",
         url:"",
         urlToImage:"",
     publishedAt:"",
