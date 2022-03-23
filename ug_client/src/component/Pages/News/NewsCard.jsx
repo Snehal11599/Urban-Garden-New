@@ -23,7 +23,10 @@ const NewsCard = () => {
                         return <div>
                             <img src={post.urlToImage} className="card-img-top" alt="..." />
                             <h3 className="card-title">{post.title}</h3>
-                            <p className="card-text">{post.description}</p>
+                            <p className="card-text">{post.url}</p>
+                            <p className="card-text">{post.desp}</p>
+                            <p className="card-text">{post.content}</p>
+                            <p className="card-text">{post.publishedAt}</p>
                             <a href="/" className="btn btn-primary">Go somewhere</a>
                         </div>
                     }
