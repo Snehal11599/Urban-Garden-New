@@ -1,26 +1,14 @@
-/*!
-
-=========================================================
-* Paper Dashboard React - v1.3.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import Dashboard from "views/Dashboard.js";
 import Update1 from 'views/Update1'
 import AddArticles from './views/AddArticles';
 import Article from './views/Article'
+import Service from "views/Service";
+import AddService from "views/AddService";
+import Update from "views/Update";
+
+
 var routes = [
+
   {
     path: "/dashboard",
     name: "Dashboard",
@@ -47,7 +35,31 @@ var routes = [
     icon: "nc-icon nc-paper",
     component: Article,
     layout: "/admin",
-  }
+  },
+{
+    
+    path: "/Service",
+    name: "service card",
+    icon: "nc-icon nc-spaceship",
+    component: Service,
+    layout: "/admin",
+  },
 
+  {
+    path: "/AddService",
+    name: "add service",
+    icon: "nc-icon nc-spaceship",
+    component: AddService,
+    layout: "/admin",
+  },
+  {
+    path: "/Update/:id",
+    name: "update",
+    icon: "nc-icon nc-spaceship",
+    component: Update,
+    layout: "/admin",
+  }
+ 
+ 
 ];
 export default routes;
