@@ -60,7 +60,7 @@ const Update1 = () => {
           <form noValidate>
             <Grid container spacing={2}>
               <Grid item xs={12}>
-                <TextField autoComplete="id" name="id" variant="outlined" required fullWidth id="id" label="Id" value={id} onChange={e => onTextFieldChange(e)}
+                <TextField autoComplete="id" name="id" variant="outlined" required fullWidth id="id" label="Id" value={id} disabled
                 />
               </Grid>
               <Grid item xs={12}>
