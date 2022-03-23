@@ -263,46 +263,19 @@
   ],
   "service": [
     {
-      "id": 1,
       "title": "Landscape Design",
-      "image": "https://html.rometheme.pro/gaco/images/services-img-1.jpg",
-      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod."
+      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, s",
+      "id": "1"
     },
     {
-      "id": 2,
       "title": "Planting & Removal",
-      "image": "https://html.rometheme.pro/gaco/images/services-img-2.jpg",
-      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod."
+      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod",
+      "id": "2"
     },
     {
-      "id": 3,
       "title": "Garden Care",
-      "image": "https://html.rometheme.pro/gaco/images/services-img-3.jpg",
-      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod."
-    },
-    {
-      "id": 4,
-      "title": "Irrigation & Drainage",
-      "image": "https://html.rometheme.pro/gaco/images/services-img-4.jpg",
-      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod."
-    },
-    {
-      "id": 5,
-      "title": "Stone and Hardscaping",
-      "image": "https://html.rometheme.pro/gaco/images/services-img-5.jpg",
-      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod."
-    },
-    {
-      "id": 6,
-      "title": "Rubbish Removal",
-      "image": "https://html.rometheme.pro/gaco/images/services-img-6.jpg",
-      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod."
-    },
-    {
-      "title": "Planting & Removal",
-      "image": "https://html.rometheme.pro/gaco/images/services-img-2.jpg",
-      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.",
-      "id": 7
+      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.\"     ",
+      "id": "3"
     }
   ]
 }
