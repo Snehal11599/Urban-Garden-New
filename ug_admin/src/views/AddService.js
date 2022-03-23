@@ -17,7 +17,7 @@ const AddService = () => {
     })
     console.log(service);
   }
-
+  //add services
   async function onFormSubmit(e) {
     e.preventDefault()
     try {
@@ -31,12 +31,11 @@ const AddService = () => {
     return <Service />
 
   }
-
   return (
     <>
       <Box textAlign="center" p={2} mb={2}>
       </Box>
-      <Grid container justify="center" spacing={4}>
+      <Grid container justifyContent="center" spacing={4}>
         <Grid item md={6} xs={12}>
           <Box textAlign="center" p={2} mb={2}>
             <Typography variant="h4">Add SERVICE</Typography>

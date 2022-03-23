@@ -6,8 +6,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Row, Col } from "reactstrap";
 
-
-
 const Service = () => {
    const [service, setService] = useState([]);
 
@@ -24,20 +22,17 @@ const Service = () => {
       getService();
    }, [])
 
+//delete service data
    const handleDelete = async id => {
       await axios.delete(`http://localhost:3001/service/${id}`);
       var newservice = service.filter((item) => {
-         // console.log(item);
          return item.id !== id;
       })
       setService(newservice);
    }
 
-
-
-
    return (
-      <div class="content">
+      <div className ="content">
          <Row>
             <Col md="20">
 
@@ -52,8 +47,7 @@ const Service = () => {
                         </TableRow>
                      </TableHead>
                      <TableBody>
-                        {
-                           service.map((service, i) => {
+                        { service.map((service, i) => {
                               return (
                                  <TableRow key={i}>
                                     <TableCell align="center">{service.id}</TableCell>
