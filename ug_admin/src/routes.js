@@ -24,30 +24,27 @@ import TableList from "views/Tables.js";
 import Maps from "views/Map.js";
 import UserPage from "views/User.js";
 import UpgradeToPro from "views/Upgrade.js";
-import Add_Articles from "views/Add_Articles";
 import Update1 from 'views/Update1'
 import ArticleTable from "./views/ArticleTable";
-import Material_Table from "./views/Material_Table";
-import BasicTable from "./views/BasicTable"
-import UserTable from "./views/UserTable";
-import Edit from "./views/Edit";
+
+
 import AddArticles from './views/AddArticles';
 import Service from './views/Service'
 var routes = [
-  {
-    path: "/dashboard",
-    name: "Dashboard",
-    icon: "nc-icon nc-bank",
-    component: Dashboard,
-    layout: "/admin",
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    icon: "nc-icon nc-diamond",
-    component: Icons,
-    layout: "/admin",
-  },
+  // {
+  //   path: "/dashboard",
+  //   name: "Dashboard",
+  //   icon: "nc-icon nc-bank",
+  //   component: Dashboard,
+  //   layout: "/admin",
+  // },
+  // {
+  //   path: "/icons",
+  //   name: "Icons",
+  //   icon: "nc-icon nc-diamond",
+  //   component: Icons,
+  //   layout: "/admin",
+  // },
   // {
   //   path: "/maps",
   //   name: "Maps",
@@ -92,16 +89,16 @@ var routes = [
   //   layout: "/admin",
   // },
   // 
-  {
-    path: "/ArticleTable",
-    name: "Article_Table",
-    icon: "nc-icon nc-paper",
-    component:ArticleTable,
-    layout: "/admin",
-   },
+  // {
+  //   path: "/ArticleTable",
+  //   name: "Article_Table",
+  //   icon: "nc-icon nc-paper",
+  //   component:ArticleTable,
+  //   layout: "/admin",
+  //  },
   {
     path: "/AddArticles",
-    name: "AddArticles",
+    name: "AddArticles  ",
     icon: "nc-icon nc-paper",
     component:AddArticles,
     layout: "/admin",
@@ -114,15 +111,15 @@ var routes = [
   //   layout: "/admin",
   // }
   ,{
-    path: "/Update1",
-    name: "Update1",
+    path: "/Update1/:id",
+    name: "UpdateData  ",
     icon: "nc-icon nc-paper",
     component:Update1,
     layout: "/admin",
   }
   ,{
     path: "/Service",
-    name: "Service",
+    name: "Articles_Table",
     icon: "nc-icon nc-paper",
     component:Service,
     layout: "/admin",

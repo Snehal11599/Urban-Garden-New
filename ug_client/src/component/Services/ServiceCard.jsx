@@ -25,7 +25,7 @@ const ServiceCard = () => {
                   <div className="card-body">
                     <h5 className="card-title">Service ID:{service.id}</h5>
                     <h5 className="card-title">{service.title}</h5>
-                    <p className="card-text">{service.decription}</p>
+                    <p className="card-text">{service.desp}</p>
                   </div>
                   <div className="card-footer">
                     <small className="text-muted"></small>
