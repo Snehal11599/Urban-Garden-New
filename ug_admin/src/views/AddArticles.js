@@ -1,8 +1,7 @@
-import { Typography, Box, makeStyles, Grid, TextField, Button } from "@material-ui/core"
-import { deepPurple, green } from '@material-ui/core/colors';
+import { Typography, Box, Grid, TextField, Button } from "@material-ui/core"
 import axios from "axios";
 import { useState } from "react";
-import Service from "./Service";
+import Article from "./Article";
 
 const AddArticles = () => {
   const [service, setService] = useState({
@@ -16,7 +15,6 @@ const AddArticles = () => {
     publishedAt: "",
     content: ""
   });
-
   const [status, setStatus] = useState();
   function onTextFieldChange(e) {
     setService({
@@ -25,34 +23,27 @@ const AddArticles = () => {
     })
     console.log(service);
   }
-
   async function onFormSubmit(e) {
     e.preventDefault()
     try {
-      await axios.post(`http://localhost:3000/articles`, service)
+      await axios.post(`http://localhost:3001/articles`, service)
       setStatus(true);
     } catch (error) {
       console.log("Something is Wrong");
     }
   }
   if (status) {
-    return <Service />
-
+    return <Article />
   }
-
-
   return (
     <>
-      <Box textAlign="center" p={2} mb={2}>
-
-      </Box>
-      <Grid container justify="center" spacing={4}>
+      <Box textAlign="center" p={2} mb={2}></Box>
+      <Grid container justifyContent="center" spacing={4}>
         <Grid item md={6} xs={12}>
           <Box textAlign="center" p={2} mb={2}>
             <Typography variant="h4">Add Articles</Typography>
           </Box>
           <form noValidate>
-
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <TextField autoComplete="id" name="id" variant="outlined" required fullWidth id="id" label="Id" onChange={e => onTextFieldChange(e)}
@@ -75,13 +66,9 @@ const AddArticles = () => {
               <Grid item xs={12}>
                 <TextField autoComplete="email" name="url" variant="outlined" required fullWidth id="url" label="url" onChange={e => onTextFieldChange(e)} />
               </Grid>
-
-
-
-              <Grid item xs={12}>
+               <Grid item xs={12}>
                 <TextField autoComplete="email" name="urlToImage" variant="outlined" required fullWidth id="urlToImage" label="urlToImage" onChange={e => onTextFieldChange(e)} />
               </Grid>
-
               <Grid item xs={12}>
                 <TextField autoComplete="email" name="publishedAt" variant="outlined" required fullWidth id="publishedAt" label="publishedAt" onChange={e => onTextFieldChange(e)} />
               </Grid>
@@ -95,9 +82,7 @@ const AddArticles = () => {
             </Box>
           </form>
         </Grid>
-
         <Grid item md={6} xs={12}>
-
         </Grid>
       </Grid>
     </>

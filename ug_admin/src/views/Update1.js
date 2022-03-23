@@ -1,10 +1,10 @@
-import { Typography, Box, makeStyles, Grid, TextField, Button } from "@material-ui/core"
+import { Typography, Box,  Grid, TextField, Button } from "@material-ui/core"
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useHistory, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 const Update1 = () => {
   const { id } = useParams();
-  const history = useHistory();
+  
   const [service, setService] = useState({
     id: "",
     name: "",
@@ -19,7 +19,7 @@ const Update1 = () => {
   useEffect(() => {
     async function getService() {
       try {
-        const service1 = await axios.get(`http://localhost:3000/articles/${id}`)
+        const service1 = await axios.get(`http://localhost:3001/articles/${id}`)
         console.log(service1.data);
         setService(service1.data);
       } catch (error) {
@@ -39,7 +39,7 @@ const Update1 = () => {
   async function onFormSubmit(e) {
     e.preventDefault()
     try {
-      await axios.put(`http://localhost:3000/articles/${id}`, service)
+      await axios.put(`http://localhost:3001/articles/${id}`, service)
 
     } catch (error) {
       console.log("Something is Wrong");
@@ -52,7 +52,7 @@ const Update1 = () => {
       <Box textAlign="center" p={2} mb={2}>
 
       </Box>
-      <Grid container justify="center" spacing={4}>
+      <Grid container justifyContent="center" spacing={4}>
         <Grid item md={6} xs={12}>
           <Box textAlign="center" p={2} mb={2}>
             <Typography variant="h4">Update Articles</Typography>

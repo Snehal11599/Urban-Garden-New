@@ -4,6 +4,7 @@ import CenterCard from "./CenterCard";
 import OurLatestBlog from "./OurLatestBlog";
 import OurService from "./OurService";
 import RecentProject from "./RecentProject";
+import OurPricingPlan from "./OurPricingPlan";
 export default function Home() {
   return (
     <div>
@@ -15,6 +16,7 @@ export default function Home() {
       <OurService/>
       <RecentProject/>
       <OurLatestBlog/>
+      <OurPricingPlan/>
     </div>
   );
 }
