@@ -27,6 +27,8 @@ const Update = () => {
             ...service,
             [e.target.name]: e.target.value
         })
+
+    
     }
 
     // edit service data
