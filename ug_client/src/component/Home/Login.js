@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
+import Quote from "../Buttons/Quote";
 const LoginForm = ({ onSubmit }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -61,9 +62,8 @@ export default function Login() {
           <LoginForm onSubmit={onLoginFormSubmit} />
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close Modal
-          </Button>
+         <Quote/>
+        
         </Modal.Footer>
       </Modal>
     </>

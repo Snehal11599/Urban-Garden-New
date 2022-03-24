@@ -1,10 +1,11 @@
 import Dashboard from "views/Dashboard.js";
-import Update1 from 'views/Update1'
-import AddArticles from './views/AddArticles';
-import Article from './views/Article'
-import Service from "views/Service";
-import AddService from "views/AddService";
-import Update from "views/Update";
+import AddArticles from './views/articles/AddArticles';
+import Article from './views/articles/Article'
+import Service from "views/service/Service";
+import AddService from "views/service/AddService";
+import Update from "views/service/Update";
+import ReceiveQuote from "views/admin/ReceiveQuote";
+import UpdateArticles from "views/articles/UpdateArticles";
 
 
 var routes = [
@@ -23,10 +24,10 @@ var routes = [
     component: AddArticles,
     layout: "/admin",
   }, {
-    path: "/Update1/:id",
-    name: "UpdateData  ",
+    path: "/UpdateArticles/:id",
+    name: "Updatearticles  ",
     icon: "nc-icon nc-paper",
-    component: Update1,
+    component: UpdateArticles,
     layout: "/admin",
   }
   , {
@@ -39,7 +40,7 @@ var routes = [
 {
     
     path: "/Service",
-    name: "service card",
+    name: "Service_Table",
     icon: "nc-icon nc-spaceship",
     component: Service,
     layout: "/admin",
@@ -47,16 +48,23 @@ var routes = [
 
   {
     path: "/AddService",
-    name: "add service",
+    name: "Add Service",
     icon: "nc-icon nc-spaceship",
     component: AddService,
     layout: "/admin",
   },
   {
     path: "/Update/:id",
-    name: "update",
+    name: "Update Service",
     icon: "nc-icon nc-spaceship",
     component: Update,
+    layout: "/admin",
+  },
+  {
+    path: "/ReceiveQuote",
+    name: "receive quote",
+    icon: "nc-icon nc-spaceship",
+    component: ReceiveQuote,
     layout: "/admin",
   }
  
