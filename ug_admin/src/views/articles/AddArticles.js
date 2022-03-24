@@ -1,7 +1,7 @@
 import { Typography, Box, Grid, TextField, Button } from "@material-ui/core"
 import axios from "axios";
 import { useState } from "react";
-import Article from "./Article";
+import Article from "../articles/Article";
 
 const AddArticles = () => {
   const [service, setService] = useState({

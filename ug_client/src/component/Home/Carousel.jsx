@@ -1,8 +1,10 @@
 import React from "react";
 
+
 const Carousel = () => {
   return (
     <div>
+      
       <div
         id="carouselExampleCaptions"
         className="carousel slide"
@@ -15,6 +17,7 @@ const Carousel = () => {
               className="d-block w-100"
               alt="..."
             />
+            
             <div className="carousel-caption d-none d-md-block">
               <h1>We Are Gaco LandScaping</h1>
               <p>

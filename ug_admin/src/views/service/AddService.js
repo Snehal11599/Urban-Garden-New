@@ -1,7 +1,8 @@
 import { Typography, Box, Grid, TextField, Button } from "@material-ui/core"
 import axios from "axios";
 import { useState } from "react";
-import Service from "./Service";
+import Service from "../service/Service"
+
 
 const AddService = () => {
   const [service, setService] = useState({
@@ -28,7 +29,7 @@ const AddService = () => {
     }
   }
   if (status) {
-    return <Service />
+    return <Service/>
 
   }
   return (
