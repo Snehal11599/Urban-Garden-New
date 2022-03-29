@@ -6,6 +6,7 @@ import AddService from "views/service/AddService";
 import Update from "views/service/Update";
 import ReceiveQuote from "views/admin/ReceiveQuote";
 import UpdateArticles from "views/articles/UpdateArticles";
+import EditQuote from "views/admin/EditQuote";
 
 
 var routes = [
@@ -65,6 +66,13 @@ var routes = [
     name: "receive quote",
     icon: "nc-icon nc-spaceship",
     component: ReceiveQuote,
+    layout: "/admin",
+  },
+  {
+    path: "/EditQuote/:id",
+    name: "Edit quote",
+    icon: "nc-icon nc-spaceship",
+    component:EditQuote,
     layout: "/admin",
   }
  
