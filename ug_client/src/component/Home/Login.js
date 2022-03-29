@@ -13,23 +13,23 @@ const LoginForm = ({ onSubmit }) => {
           placeholder="Enter email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-/>
+        />
       </Form.Group>
-<Form.Group controlId="formBasicPassword">
+      <Form.Group controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
         <Form.Control
           type="password"
           placeholder="Password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}/>
+          onChange={(e) => setPassword(e.target.value)} />
       </Form.Group>
       <Form.Group controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Remember Me!" />
       </Form.Group>
-      <NavLink className="nav-link" to="/">
-      <Button variant="primary" type="submit" block>
-        Login
-      </Button>
+      <NavLink className="nav-link" to="/User">
+        <Button variant="primary" type="submit" block>
+          Login
+        </Button>
       </NavLink>
     </Form>
   );
@@ -42,14 +42,14 @@ export default function Login() {
     e.preventDefault();
     handleClose();
   };
-return (
+  return (
     <>
       <div
         className="d-flex align-items-center justify-content-center"
         style={{ height: "100vh" }}
       >
         <Button className="btn btn-success text-white cd-10 md-10" onClick={handleShow}>
-          Click   Here   For   Login 
+          Click   Here   For   Login
         </Button>
       </div>
       <Modal show={show} onHide={handleClose}>

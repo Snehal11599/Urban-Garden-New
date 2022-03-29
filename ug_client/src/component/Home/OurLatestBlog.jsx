@@ -21,11 +21,9 @@ function OurLatestBlog() {
         >
            </div>
       </div>
-
-
-      <div className="card-group">
+ <div className="card-group">
   <div className="card">
-    <img className="card-img-top" src="./assets/Home/LatestBlog/person talking to each other.jpg" alt="Card image cap"/>
+    <img className="card-img-top" src="./assets/Home/LatestBlog/person talking to each other.jpg" alt="Card  cap"/>
     <div className="card-body">
       <h3 className="card-title">Why you have difficult to clean your lawn</h3>
       <p className="card-text">We provide high quality design at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores...</p>
@@ -33,7 +31,7 @@ function OurLatestBlog() {
     </div>
   </div>
   <div className="card">
-    <img className="card-img-top" src="./assets/Home/LatestBlog/news-img-2.jpg" alt="Card image cap"/>
+    <img className="card-img-top" src="./assets/Home/LatestBlog/news-img-2.jpg" alt="Card  cap"/>
     <div className="card-body">
       <h3 className="card-title">We Open Recritment for LandScaping</h3>
       <p className="card-text">We provide high quality design at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores...</p>

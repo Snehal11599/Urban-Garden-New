@@ -1,7 +1,6 @@
 import { Typography, Box, Grid, TextField, Button } from "@material-ui/core"
 import axios from "axios";
 import { useState,useEffect} from "react";
-import { NavLink } from "react-bootstrap";
 const Register = () => {
   const [register, setregister] = useState({
     name: "",
@@ -47,8 +46,7 @@ const Register = () => {
               <Grid item xs={12}>
                 <TextField autoComplete="sarname" name="surname" variant="outlined" required fullWidth id="surname" label="Surname" onChange={e => onTextFieldChange(e)} />
               </Grid>
-
-              <Grid item xs={12}>
+               <Grid item xs={12}>
                 <TextField autoComplete="contact" name="contact" variant="outlined" required fullWidth id="contact" label="contact" onChange={e => onTextFieldChange(e)} />
               </Grid>
               <Grid item xs={12}>

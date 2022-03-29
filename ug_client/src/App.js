@@ -13,13 +13,12 @@ import News from './component/Pages/News/News';
 import SingleNews from './component/Pages/SingleNews/SingleNews';
 import Login from './component/Home/Login';
 import Register from'./component/Home/Register';
-
+import User from './component/Buttons/User'
 function App() {
   return (
     <>
       <NavBar />
-      
-      <Routes>
+       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
@@ -31,9 +30,9 @@ function App() {
         <Route exact path='/singlenews' element={<SingleNews />} />
         <Route exact path='/Login' element={<Login />} />
         <Route exact path='/Register' element={<Register />} />
-      
-      </Routes>
-      {/* <Footer /> */}
+        <Route exact path='/User' element={<User />} />
+       </Routes>
+       <Footer /> 
 
     </>
   )

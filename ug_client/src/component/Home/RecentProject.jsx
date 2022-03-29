@@ -23,23 +23,23 @@ function RecentProject() {
       </div>
     <div className="card-group">
   <div className="card">
-    <img className="card-img-top" src="./assets/Home/RecentProject/I1.jpg" alt="Card image cap"/>
+    <img className="card-img-top" src="./assets/Home/RecentProject/I1.jpg" alt="Card cap"/>
     <div className="card-body">
       </div>
   </div>
   <div className="card">
-    <img className="card-img-top" src="./assets/Home/RecentProject/i2.jpg" alt="Card image cap"/>
+    <img className="card-img-top" src="./assets/Home/RecentProject/i2.jpg" alt="Card  cap"/>
     <div className="card-body">
   </div>
   </div>
   <div className="card">
-    <img className="card-img-top" src="./assets/Home/RecentProject/i3.jpg" alt="Card image cap"/>
+    <img className="card-img-top" src="./assets/Home/RecentProject/i3.jpg" alt="Card  cap"/>
     <div className="card-body">
   </div>
   </div>
 
   <div className="card">
-    <img className="card-img-top" src="./assets/Home/RecentProject/i4.jpg" alt="Card image cap"/>
+    <img className="card-img-top" src="./assets/Home/RecentProject/i4.jpg" alt="Card  cap"/>
     <div className="card-body">
   </div>
   </div>
