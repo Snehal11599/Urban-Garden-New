@@ -75,8 +75,7 @@ const AddArticles = () => {
               <Grid item xs={12}>
                 <TextField autoComplete="email" name="content" variant="outlined" required fullWidth id="content" label="content" onChange={e => onTextFieldChange(e)} />
               </Grid>
-
-            </Grid>
+              </Grid>
             <Box m={3}>
               <Button type="submit" variant="contained" color="primary" fullWidth onClick={e => onFormSubmit(e)} >Add</Button>
             </Box>

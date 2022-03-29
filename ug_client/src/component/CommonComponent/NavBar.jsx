@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Login from "../Home/Login";
-
+import { Button } from "@material-ui/core"
 export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -75,18 +74,43 @@ export default function NavBar() {
                 Contact Us
               </NavLink>
             </li>
-
-            <li >
-              
-                {/* <button className="btn btn-success text-white">
-                  <NavLink className="nav-link" to="/Login">
-                  LOGIN
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                to="/pages"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <Button>
+                Login
+                </Button>
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="">
+                    Admin
                   </NavLink>
-                </button> */}
-               <Login/>
-               
-              </li>
-          </ul>
+                </li>
+                <li className="nav-items">
+                  <NavLink className="nav-link" to="/Login">
+                    User
+                  </NavLink>
+                </li>
+              </ul>
+            </li>
+            <li>
+             <li className="d-grid gap-1 col-1 mx-auto">
+              <button className="btn btn-success text-white">
+                <NavLink className="nav-link" to="/Register">
+                Register
+                </NavLink>
+              </button> 
+           </li>
+       </li>
+           
+           </ul>
         </div>
       </div>
     </nav>
