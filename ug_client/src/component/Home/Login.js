@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
-import Quote from "../Buttons/Quote";
-import { NavLink } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 const LoginForm = ({ onSubmit }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -13,7 +12,8 @@ const LoginForm = ({ onSubmit }) => {
           type="email"
           placeholder="Enter email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}/>
+          onChange={(e) => setEmail(e.target.value)}
+/>
       </Form.Group>
 <Form.Group controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
@@ -43,11 +43,12 @@ export default function Login() {
     handleClose();
   };
 return (
-  <>
+    <>
       <div
         className="d-flex align-items-center justify-content-center"
         style={{ height: "100vh" }}
-      ><Button className="btn btn-success text-white cd-10 md-10" onClick={handleShow}>
+      >
+        <Button className="btn btn-success text-white cd-10 md-10" onClick={handleShow}>
           Click   Here   For   Login 
         </Button>
       </div>
@@ -59,8 +60,9 @@ return (
           <LoginForm onSubmit={onLoginFormSubmit} />
         </Modal.Body>
         <Modal.Footer>
-         <Quote/>
-        
+          <Button variant="secondary" onClick={handleClose}>
+            Close Modal
+          </Button>
         </Modal.Footer>
       </Modal>
     </>
