@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import Quote from "../Buttons/Quote";
+import { NavLink } from "react-bootstrap";
 const LoginForm = ({ onSubmit }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -58,9 +59,8 @@ return (
           <LoginForm onSubmit={onLoginFormSubmit} />
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close Modal
-          </Button>
+         <Quote/>
+        
         </Modal.Footer>
       </Modal>
     </>

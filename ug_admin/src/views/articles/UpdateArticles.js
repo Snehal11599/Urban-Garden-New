@@ -2,7 +2,7 @@ import { Typography, Box,  Grid, TextField, Button } from "@material-ui/core"
 import axios from "axios";
 import { useState, useEffect } from "react";
 import {  useParams } from "react-router-dom";
-const Update1 = () => {
+const UpdateArticles = () => {
   const { id } = useParams();
   
   const [service, setService] = useState({
@@ -109,4 +109,4 @@ const Update1 = () => {
   )
 }
 
-export default Update1
+export default UpdateArticles
