@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Login from "../Home/Login";
+
 
 export default function NavBar() {
   return (
@@ -75,9 +75,7 @@ export default function NavBar() {
                 Contact Us
               </NavLink>
             </li>
-            <li >
-               <Login/>
-              </li> 
+            
           </ul>
         </div>
       </div>
