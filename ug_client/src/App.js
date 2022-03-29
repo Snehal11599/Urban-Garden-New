@@ -11,13 +11,14 @@ import Testimonials from './component/Pages/Testimonials/Testimonials';
 import Faq from './component/Pages/FAQ/Faq';
 import News from './component/Pages/News/News';
 import SingleNews from './component/Pages/SingleNews/SingleNews';
-
+import Login from './component/Home/Login';
+import Register from'./component/Home/Register';
+import User from './component/Buttons/User'
 function App() {
   return (
     <>
       <NavBar />
-      
-      <Routes>
+       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
@@ -27,11 +28,11 @@ function App() {
         <Route exact path='/faq' element={<Faq />} />
         <Route exact path='/news' element={<News />} />
         <Route exact path='/singlenews' element={<SingleNews />} />
-        
-       
-
-      </Routes>
-      {/* <Footer /> */}
+        <Route exact path='/Login' element={<Login />} />
+        <Route exact path='/Register' element={<Register />} />
+        <Route exact path='/User' element={<User />} />
+       </Routes>
+       <Footer /> 
 
     </>
   )

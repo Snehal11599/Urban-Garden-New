@@ -4,7 +4,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Row, Col } from "reactstrap";
 import Quote from "./Quote";
-
 const ReceiveQuote = () => {
     const [quote, setquote] = useState([]);
     useEffect(() => {
@@ -18,9 +17,7 @@ const ReceiveQuote = () => {
         }
         getquote();
     }, [])
-
-
-    return (
+ return (
         <div className="content">
             
             <Row>
@@ -45,7 +42,7 @@ const ReceiveQuote = () => {
                                             <TableCell align="center">{quote.GardeningArea}</TableCell>
                                             <TableCell align="center">{quote.QuoteAmount}</TableCell>
                                             <TableCell align="center">{quote.WorkDescription}</TableCell>
-                                            <br></br>
+                                           
                                             <TableCell align="center">
                                                 <Quote />
                                             </TableCell>
@@ -64,13 +61,9 @@ const ReceiveQuote = () => {
 };
 export default function User() {
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-
-
-    return (
+ return (
         <>
          <div className="d-flex align-items-center justify-content-center"style={{ height: "20vh" }}>
              

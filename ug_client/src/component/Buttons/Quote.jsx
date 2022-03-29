@@ -109,7 +109,7 @@ const LoginForm = ({ onSubmit }) => {
             </Form.Group>
 
 
-            <Button variant="primary" type="submit" onClick={onFormSubmit} block>
+            <Button variant="primary" type="submit" onClick={onFormSubmit} block="true">
                 Submit
             </Button>
         </Form>

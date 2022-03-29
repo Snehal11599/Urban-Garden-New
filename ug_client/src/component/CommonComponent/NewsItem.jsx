@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 const NewsItem = () => {
@@ -47,9 +48,9 @@ const NewsItem = () => {
                             Year
                         </button>
                         <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                            <li><a className="dropdown-item active" to="/">March 2017</a></li>
-                            <li><a className="dropdown-item" to="/">Febuary 2017</a></li>
-                            <li><a className="dropdown-item" to="/">January 2017 </a></li>
+                            <li><NavLink className="dropdown-item active" to="/">March 2017</NavLink></li>
+                            <li><NavLink className="dropdown-item" to="/">Febuary 2017</NavLink></li>
+                            <li><NavLink className="dropdown-item" to="/">January 2017 </NavLink></li>
                             <li><hr className="dropdown-divider" /></li>
                         </ul>
                     </div>
