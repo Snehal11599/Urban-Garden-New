@@ -11,8 +11,6 @@ import Testimonials from './component/Pages/Testimonials/Testimonials';
 import Faq from './component/Pages/FAQ/Faq';
 import News from './component/Pages/News/News';
 import SingleNews from './component/Pages/SingleNews/SingleNews';
-// import LoginForm from './component/Home/LoginForm';
-import Login from './component/Home/Login';
 
 function App() {
   return (
@@ -28,9 +26,10 @@ function App() {
         <Route exact path='/testimonials' element={<Testimonials />} />
         <Route exact path='/faq' element={<Faq />} />
         <Route exact path='/news' element={<News />} />
-        {/* <Route exact path='/LoginForm' element={<LoginForm />} /> */}
         <Route exact path='/singlenews' element={<SingleNews />} />
-        <Route exact path='/Login' element={<Login />} />
+        
+       
+
       </Routes>
       {/* <Footer /> */}
 
