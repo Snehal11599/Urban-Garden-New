@@ -75,17 +75,9 @@ export default function NavBar() {
                 Contact Us
               </NavLink>
             </li>
-
             <li >
-              
-                {/* <button className="btn btn-success text-white">
-                  <NavLink className="nav-link" to="/Login">
-                  LOGIN
-                  </NavLink>
-                </button> */}
                <Login/>
-               
-              </li>
+              </li> 
           </ul>
         </div>
       </div>
