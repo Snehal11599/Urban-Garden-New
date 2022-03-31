@@ -7,14 +7,6 @@ const LoginForm = ({ onSubmit }) => {
   return (
     <Form onSubmit={onSubmit}>
       <Form.Group controlId="formBasicEmail">
-        <Form.Label>Select For Login</Form.Label>
-        <select className="form-control" id="p_service">
-                                    {/* <option value="0">Choose </option> */}
-                                    <option value="1">User</option>
-                                    <option value="2">Admin</option>
-                                    </select>
-      </Form.Group>
-       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control
           type="email"
@@ -34,8 +26,8 @@ const LoginForm = ({ onSubmit }) => {
       <Form.Group controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Remember Me!" />
       </Form.Group>
-      <NavLink className="nav-link" to="/">
-        <Button variant="primary" type="submit" block="true">
+      <NavLink className="nav-link" to="/ReceiveQuote">
+        <Button variant="primary" type="submit" block>
           Login
         </Button>
       </NavLink>

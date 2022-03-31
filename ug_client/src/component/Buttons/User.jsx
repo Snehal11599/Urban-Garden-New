@@ -13,11 +13,13 @@ const ReceiveQuote = () => {
                 setquote(quote.data);
             } catch (error) {
                 console.log("Something is Wrong");
-            }}
+            }
+        }
         getquote();
     }, [])
  return (
         <div className="content">
+            
             <Row>
                 <Col md="50">
                     <TableContainer component={Paper}>

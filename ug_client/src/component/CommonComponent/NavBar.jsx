@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Button } from "@material-ui/core"
 export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
@@ -83,7 +82,18 @@ export default function NavBar() {
                 aria-expanded="false">
                 Login
               </NavLink>
-              
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/Login">
+                    User
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/dashboard">
+                    Admin
+                  </NavLink>
+                </li>
+              </ul>
             </li>
              <li className="d-grid gap-2 col-2 mx-auto">
               <button className="btn btn-success text-white"style={{ color: "#rgb(139, 173, 33" }}>
