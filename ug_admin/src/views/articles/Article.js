@@ -69,7 +69,7 @@ const Article = () => {
                                     <TableCell align="center">
                                        <Tooltip title="Edit">
                                           <Button variant="contained"
-                                             color="primary"><Link to={`Update1/${article.id}`}>Edit</Link></Button>
+                                             color="primary"><Link to={`UpdateArticles/${article.id}`}>Edit</Link></Button>
                                        </Tooltip>
                                     </TableCell>
                                     <TableCell align="center">

@@ -74,30 +74,13 @@ export default function NavBar() {
                 Contact Us
               </NavLink>
             </li>
-            <li className="nav-item dropdown">
-              <NavLink
-                className="nav-link dropdown-toggle"
-                to="/pages"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              ><Button>
+            <li className="nav-item ">
+              <NavLink className="nav-link" to="/Login">
+                 <Button>
                 Login
                 </Button>
               </NavLink>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li className="nav-item">
-                  <NavLink className="nav-link" to="/Login">
-                    Admin
-                  </NavLink>
-                </li>
-                <li className="nav-items">
-                  <NavLink className="nav-link" to="/Login">
-                    User
-                  </NavLink>
-                </li>
-              </ul>
+              
             </li>
             
              <li className="d-grid gap-1 col-1 mx-auto">

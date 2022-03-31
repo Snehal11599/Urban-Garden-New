@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
 const style={
     color:" #222222",
     display: "block",
@@ -9,7 +8,6 @@ const style={
     backgroundColor: "#f2f2f2",
     width:"100%"
 }
-
 const LatestPost = () => {
     return (
         <div className='d-grid gap-2 col-6 mx-auto'>

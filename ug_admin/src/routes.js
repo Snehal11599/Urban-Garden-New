@@ -7,11 +7,8 @@ import Update from "views/service/Update";
 import ReceiveQuote from "views/admin/ReceiveQuote";
 import UpdateArticles from "views/articles/UpdateArticles";
 import EditQuote from "views/admin/EditQuote";
-
-
 var routes = [
-
-  {
+ {
     path: "/dashboard",
     name: "Dashboard",
     icon: "nc-icon nc-bank",
@@ -24,11 +21,12 @@ var routes = [
     icon: "nc-icon nc-paper",
     component: AddArticles,
     layout: "/admin",
-  }, {
+  }, 
+  {
     path: "/UpdateArticles/:id",
     name: "Updatearticles  ",
     icon: "nc-icon nc-paper",
-    component: UpdateArticles,
+    component:UpdateArticles,
     layout: "/admin",
   }
   , {
@@ -39,15 +37,12 @@ var routes = [
     layout: "/admin",
   },
 {
-    
-    path: "/Service",
+  path: "/Service",
     name: "Service_Table",
     icon: "nc-icon nc-spaceship",
     component: Service,
     layout: "/admin",
-  },
-
-  {
+  },{
     path: "/AddService",
     name: "Add Service",
     icon: "nc-icon nc-spaceship",
