@@ -31,7 +31,7 @@ function Footer(props) {
             <ul>
               <li>
                 <a href="https://www.creative-tim.com" target="_blank">
-                  Creative Tim
+                  Gaco
                 </a>
               </li>
               <li>
@@ -49,7 +49,7 @@ function Footer(props) {
           <div className="credits ml-auto">
             <div className="copyright">
               &copy; {1900 + new Date().getYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by Creative Tim
+              <i className="fa fa-heart heart" /> Gaco
             </div>
           </div>
         </Row>

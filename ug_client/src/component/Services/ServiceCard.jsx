@@ -16,16 +16,16 @@ const ServiceCard = () => {
   return (
     <div>
       <div className="row row-cols-1 row-cols-md-3 g-4">
-        {service.map((service) => {
+        {service.map((service,i) => {
           return (
-            <div key={service.id}>
+            <div key={i}>
               <div className="col">
                 <div className="card h-100">
                   <img src={service.image} className="card-img-top" alt="..." />
                   <div className="card-body">
-                    <h5 className="card-title">Service ID:{service.id}</h5>
+                 
                     <h5 className="card-title">{service.title}</h5>
-                    <p className="card-text">{service.desp}</p>
+                    <p className="card-text">{service.decription}</p>
                   </div>
                   <div className="card-footer">
                     <small className="text-muted"></small>

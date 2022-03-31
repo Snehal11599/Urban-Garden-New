@@ -44,10 +44,7 @@ const AddService = () => {
           </Box>
           <form noValidate>
             <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <TextField autoComplete="id" name="id" variant="outlined" required fullWidth id="id" label="Id" onChange={e => onTextFieldChange(e)}
-                />
-              </Grid>
+            
               <Grid item xs={12}>
                 <TextField autoComplete="stuname" name="title" variant="outlined" required fullWidth id="title" label="Title" onChange={e => onTextFieldChange(e)}
                 />

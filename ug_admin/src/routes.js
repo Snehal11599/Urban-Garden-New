@@ -1,12 +1,12 @@
 import Dashboard from "views/Dashboard.js";
-import AddArticles from './views/articles/AddArticles';
-import Article from './views/articles/Article'
+import News from './views/news/News'
 import Service from "views/service/Service";
 import AddService from "views/service/AddService";
 import Update from "views/service/Update";
 import ReceiveQuote from "views/admin/ReceiveQuote";
-import UpdateArticles from "views/articles/UpdateArticles";
+import UpdateNews from "views/news/UpdateNews";
 import EditQuote from "views/admin/EditQuote";
+import AddNews from "./views/news/AddNews";
 
 
 var routes = [
@@ -19,23 +19,23 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/AddArticles",
-    name: "AddArticles  ",
+    path: "/AddNews",
+    name: "AddNews  ",
     icon: "nc-icon nc-paper",
-    component: AddArticles,
+    component: AddNews,
     layout: "/admin",
   }, {
-    path: "/UpdateArticles/:id",
-    name: "Updatearticles  ",
+    path: "/UpdateNews/:id",
+    name: "UpdateNews  ",
     icon: "nc-icon nc-paper",
-    component: UpdateArticles,
+    component: UpdateNews,
     layout: "/admin",
   }
   , {
-    path: "/Article",
-    name: "Articles_Table",
+    path: "/News",
+    name: "News Table",
     icon: "nc-icon nc-paper",
-    component: Article,
+    component: News,
     layout: "/admin",
   },
 {
@@ -64,14 +64,14 @@ var routes = [
   {
     path: "/ReceiveQuote",
     name: "receive quote",
-    icon: "nc-icon nc-spaceship",
+    icon: "nc-icon nc-caps-small",
     component: ReceiveQuote,
     layout: "/admin",
   },
   {
     path: "/EditQuote/:id",
     name: "Edit quote",
-    icon: "nc-icon nc-spaceship",
+    icon: "nc-icon nc-caps-small",
     component:EditQuote,
     layout: "/admin",
   }

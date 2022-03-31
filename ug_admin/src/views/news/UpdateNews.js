@@ -2,7 +2,7 @@ import { Typography, Box,  Grid, TextField, Button } from "@material-ui/core"
 import axios from "axios";
 import { useState, useEffect } from "react";
 import {  useParams } from "react-router-dom";
-const UpdateArticles = () => {
+const UpdateNews = () => {
   const { id } = useParams();
   
   const [service, setService] = useState({
@@ -55,7 +55,7 @@ const UpdateArticles = () => {
       <Grid container justifyContent="center" spacing={4}>
         <Grid item md={6} xs={12}>
           <Box textAlign="center" p={2} mb={2}>
-            <Typography variant="h4">Update Articles</Typography>
+            <Typography variant="h4">Update News</Typography>
           </Box>
           <form noValidate>
             <Grid container spacing={2}>
@@ -109,4 +109,4 @@ const UpdateArticles = () => {
   )
 }
 
-export default UpdateArticles
+export default UpdateNews
