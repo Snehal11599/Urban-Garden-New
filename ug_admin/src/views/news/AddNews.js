@@ -6,14 +6,13 @@ import News from "./News";
 const AddNews = () => {
   const [service, setService] = useState({
     id: "",
-    name: "",
     author: "",
     title: "",
     desp: "",
     url: "",
     urlToImage: "",
     publishedAt: "",
-    content: ""
+    
   });
   const [status, setStatus] = useState();
   function onTextFieldChange(e) {
@@ -45,10 +44,7 @@ const AddNews = () => {
           </Box>
           <form noValidate>
             <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <TextField autoComplete="id" name="id" variant="outlined" required fullWidth id="id" label="Id" onChange={e => onTextFieldChange(e)}
-                />
-              </Grid>
+             
               <Grid item xs={12}>
                 <TextField autoComplete="stuname" name="name" variant="outlined" required fullWidth id="name" label="Name" onChange={e => onTextFieldChange(e)}
                 />

@@ -26,11 +26,11 @@ const LoginForm = ({ onSubmit }) => {
       <Form.Group controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Remember Me!" />
       </Form.Group>
-      <NavLink className="nav-link" to="/User">
+     
         <Button variant="primary" type="submit" block>
           Login
         </Button>
-      </NavLink>
+     
     </Form>
   );
 };

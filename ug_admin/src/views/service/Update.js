@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 const Update = () => {
     const { id } = useParams();
     const [service, setService] = useState({
+        id: "",
         title: "",
         decription: ""
     });

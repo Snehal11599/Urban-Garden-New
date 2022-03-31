@@ -41,8 +41,9 @@ const Service = () => {
                      <TableHead>
                         <TableRow style={{ backgroundColor: "#616161" }}>
                            <TableCell align="center" >Id</TableCell>
-                           <TableCell >Title</TableCell>
+                           <TableCell align="center" >Title</TableCell>
                            <TableCell align="center" >Description</TableCell>
+                           <TableCell align="center" >Image</TableCell>
                            <TableCell align="center" >Action</TableCell>
                         </TableRow>
                      </TableHead>
@@ -50,9 +51,10 @@ const Service = () => {
                         { service.map((service, i) => {
                               return (
                                  <TableRow key={i}>
-                                    <TableCell align="center">{i+1}</TableCell>
+                                    <TableCell align="center">{i + 1}</TableCell>
                                     <TableCell align="center">{service.title}</TableCell>
                                     <TableCell align="center">{service.decription}</TableCell>
+                                    <TableCell align="center">{service.urltoimage}</TableCell>
                                     <TableCell align="center">
                                        <Tooltip title="Edit">
                                           <IconButton><Link to={`Update/${service.id}`}><EditIcon /></Link></IconButton>
