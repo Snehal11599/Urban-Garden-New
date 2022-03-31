@@ -50,7 +50,7 @@ export default function Login() {
       >
         <Button className="btn btn-success text-white cd-10 md-10" onClick={handleShow}>
           Click   Here   For   Login
-        </Button>
+        </Button> 
       </div>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>

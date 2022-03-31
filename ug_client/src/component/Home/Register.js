@@ -29,16 +29,17 @@ const Register = () => {
           onFormSubmit()
       };
   })
+  
   return (
     <>
-      <Box textAlign="center" p={2} mb={2}></Box>
+      <Box textAlign="center" p={3} mb={2}></Box>
       <Grid container justifyContent="center" spacing={4}>
-        <Grid item md={6} xs={12}>
+        <Grid item md={4} xs={12}>
           <Box textAlign="center" p={2} mb={2}>
             <Typography variant="h4"> Register Here</Typography>
           </Box>
           <form noValidate>
-            <Grid container spacing={2}>
+            <Grid container spacing={5}>
                <Grid item xs={12}>
                 <TextField autoComplete="name" name="name" variant="outlined" required fullWidth id="name" label="Name" onChange={e => onTextFieldChange(e)}
                 />
