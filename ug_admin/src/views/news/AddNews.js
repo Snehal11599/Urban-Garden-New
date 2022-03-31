@@ -1,9 +1,9 @@
 import { Typography, Box, Grid, TextField, Button } from "@material-ui/core"
 import axios from "axios";
 import { useState } from "react";
-import Article from "../articles/Article";
+import News from "./News";
 
-const AddArticles = () => {
+const AddNews = () => {
   const [service, setService] = useState({
     id: "",
     name: "",
@@ -33,7 +33,7 @@ const AddArticles = () => {
     }
   }
   if (status) {
-    return <Article />
+    return <News />
   }
   return (
     <>
@@ -41,7 +41,7 @@ const AddArticles = () => {
       <Grid container justifyContent="center" spacing={4}>
         <Grid item md={6} xs={12}>
           <Box textAlign="center" p={2} mb={2}>
-            <Typography variant="h4">Add Articles</Typography>
+            <Typography variant="h4">Add News</Typography>
           </Box>
           <form noValidate>
             <Grid container spacing={2}>
@@ -88,4 +88,4 @@ const AddArticles = () => {
   )
 }
 
-export default AddArticles
+export default AddNews

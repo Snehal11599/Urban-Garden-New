@@ -50,7 +50,7 @@ const Service = () => {
                         { service.map((service, i) => {
                               return (
                                  <TableRow key={i}>
-                                    <TableCell align="center">{service.id}</TableCell>
+                                    <TableCell align="center">{i+1}</TableCell>
                                     <TableCell align="center">{service.title}</TableCell>
                                     <TableCell align="center">{service.decription}</TableCell>
                                     <TableCell align="center">
