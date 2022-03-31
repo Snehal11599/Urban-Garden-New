@@ -32,6 +32,11 @@
     {
       "title": "gardening",
       "decription": "planting"
+    },
+    {
+      "title": "rt",
+      "decription": "ryt",
+      "id": "0zvK6iQ"
     }
   ],
   "Register": [
@@ -254,32 +259,21 @@
   ],
   "Quotation": [
     {
-      "GardeningAddress": "chinchwade",
-      "GardeningArea": "1000",
-      "GardenImages": "w",
-      "WorkDescription": "gardening",
-      "orderno": "112",
-      "id": 112,
-      "QuoteAmount": "200000",
-      "Client Garden Area": "10002"
+      "id": 1,
+      "name": "riya jadhav",
+      "GardeningAddress": "wakad pune",
+      "GardeningArea": "4567sq foot",
+      "GardenImages": "C:\\fakepath\\urbangardenproject.png",
+      "WorkDescription": "Maintain and grow the garden to ensure it meets specific requirements and expectations.",
+      "QuoteAmount": "12312"
     },
     {
-      "GardeningAddress": "Wing A, Level 3, Magarpatta City, Pune,",
-      "GardeningArea": "pune",
-      "GardenImages": "",
-      "WorkDescription": "trimming trees and shrubs, fertilizing",
-      "orderno": "113",
-      "id": 113,
-      "QuoteAmount": "20000"
-    },
-    {
-      "GardeningAddress": " Wing A, Level 3, Magarpatta City, Pune,",
-      "GardeningArea": "50000",
-      "GardenImages": "",
-      "WorkDescription": "trimming trees and shrubs, fertilizing ",
-      "orderno": "113",
-      "id": 114,
-      "QuoteAmount": "50000"
+      "id": 2,
+      "name": "ratan patil",
+      "GardeningAddress": "hadapsar pune",
+      "GardeningArea": "5657sq foot",
+      "GardenImages": "C:\\fakepath\\urbangardenproject.png",
+      "WorkDescription": "Perform basic maintenance such as cutting the grass, emptying bins, managing weed control and leaf raking"
     }
   ]
 }

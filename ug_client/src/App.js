@@ -13,7 +13,8 @@ import News from './component/Pages/News/News';
 import SingleNews from './component/Pages/SingleNews/SingleNews';
 import Login from './component/Home/Login';
 import Register from'./component/Home/Register';
-import User from './component/Buttons/User'
+import AddQuote from './component/Quote/AddQuote';
+import ReceiveQuote from './component/Quote/ReceiveQuote';
 function App() {
   return (
     <>
@@ -30,8 +31,9 @@ function App() {
         <Route exact path='/singlenews' element={<SingleNews />} />
         <Route exact path='/Login' element={<Login />} />
         <Route exact path='/Register' element={<Register />} />
-        <Route exact path='/User' element={<User />} />
-       </Routes>
+        <Route exact path='/ReceiveQuote' element={<ReceiveQuote />} />
+        <Route exact path='/AddQuote' element={<AddQuote />} />
+        </Routes>
        <Footer /> 
 
     </>
