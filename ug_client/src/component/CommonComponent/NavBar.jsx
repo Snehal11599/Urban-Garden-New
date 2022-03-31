@@ -27,8 +27,7 @@ export default function NavBar() {
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+                aria-expanded="false">
                 Pages
               </NavLink>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -74,39 +73,35 @@ export default function NavBar() {
                 Contact Us
               </NavLink>
             </li>
-            <li className="nav-item dropdown">
+             <li className="nav-item dropdown">
               <NavLink
                 className="nav-link dropdown-toggle"
                 to="/pages"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
-              ><Button>
+                aria-expanded="false">
                 Login
-                </Button>
               </NavLink>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/Login">
-                    Admin
+                    User
                   </NavLink>
                 </li>
-                <li className="nav-items">
-                  <NavLink className="nav-link" to="/Login">
-                    User
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/dashboard">
+                    Admin
                   </NavLink>
                 </li>
               </ul>
             </li>
-            
-             <li className="d-grid gap-1 col-1 mx-auto">
-              <button className="btn btn-success text-white">
+             <li className="d-grid gap-2 col-2 mx-auto">
+              <button className="btn btn-success text-white"style={{ color: "#rgb(139, 173, 33" }}>
                 <NavLink className="nav-link" to="/Register">
                 Register
                 </NavLink>
-              </button> 
-              
+              </button>
            </li>
        
           </ul>

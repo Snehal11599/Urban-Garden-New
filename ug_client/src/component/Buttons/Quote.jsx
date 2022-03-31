@@ -60,12 +60,12 @@ const LoginForm = ({ onSubmit }) => {
 
     }
     return (
+        <>
         <Form onSubmit={onSubmit}>
             <Form.Group controlId="orderno">
                 <Form.Label>Order No </Form.Label>
                 <Form.Control
                     type="order no"
-
                     placeholder="Enter order no"
                     name="orderno"
                     onChange={e => onTextFieldChange(e)}
@@ -113,6 +113,7 @@ const LoginForm = ({ onSubmit }) => {
                 Submit
             </Button>
         </Form>
+        </>
     );
 };
 export default function Quote() {
