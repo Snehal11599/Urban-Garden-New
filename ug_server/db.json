@@ -32,7 +32,7 @@
     },
     {
       "id": 2,
-      "title": "Planting & Removald",
+      "title": "Planting & Removal",
       "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.",
       "urltoimage": "https://html.rometheme.pro/gaco/images/services-img-2.jpg"
     }
@@ -273,32 +273,13 @@
   ],
   "Quotation": [
     {
-      "id": 2,
+      "id": 1,
       "name": "ratan patil",
       "email": "khuysh@gmail",
       "GardeningAddress": "hadapsar pune",
       "GardeningArea": "5657sq foot",
       "GardenImages": "C:\\fakepath\\urbangardenproject.png",
       "WorkDescription": "Perform basic maintenance such as cutting the grass, emptying bins, managing weed control and leaf raking"
-    },
-    {
-      "name": "khus",
-      "mail": "khus@gmail.com",
-      "GardeningAddress": "fjjj",
-      "GardeningArea": "ewqewe",
-      "GardenImages": "",
-      "WorkDescription": "dddd",
-      "id": 3,
-      "QuoteAmount": "efdff"
-    },
-    {
-      "name": "amit rao",
-      "mail": "khushaliargade@gmail.com",
-      "GardeningAddress": "pune",
-      "GardeningArea": "5000",
-      "GardenImages": "",
-      "WorkDescription": "planting",
-      "id": 4
     }
   ]
 }

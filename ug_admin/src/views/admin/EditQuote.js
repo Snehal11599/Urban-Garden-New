@@ -4,17 +4,15 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import emailjs from 'emailjs-com'
 
-
-
 const EditQuote = () => {
     const { id } = useParams();
     const [quote, setQuote] = useState({
-        mail: "",
+        email: "",
         GardeningAddress: "",
         GardeningArea: "",
-        GardenImages:"",
-        WorkDescription:"",
-         });
+        GardenImages: "",
+        WorkDescription: "",
+    });
     useEffect(() => {
         async function getquote() {
             try {
@@ -32,22 +30,22 @@ const EditQuote = () => {
             ...quote,
             [e.target.name]: e.target.value
         })
-   }
+    }
 
 
-   function sendEmail(e) {
-    e.preventDefault();
-    emailjs.sendForm("service_b3nh3g9", "template_tbkloo6", e.target, "nFxs7WI33NkoTBKnZ").then(res => {
-        alert('Message Sent Successfully')
-        console.log(res);
-    }).catch(err => console.log(err));
-}
+    function sendEmail(e) {
+        e.preventDefault();
+        emailjs.sendForm("service_b3nh3g9", "template_tbkloo6", e.target, "nFxs7WI33NkoTBKnZ").then(res => {
+            alert('Message Sent Successfully')
+            console.log(res);
+        }).catch(err => console.log(err));
+    }
 
     // edit quote data
     async function onFormSubmit(e) {
         e.preventDefault()
         try {
-            await axios.put(`http://localhost:3001/Quotation/${id}`,quote)
+            await axios.put(`http://localhost:3001/Quotation/${id}`, quote)
         } catch (error) {
             console.log("Something is Wrong");
         }
@@ -61,13 +59,13 @@ const EditQuote = () => {
                 <Grid item md={6} xs={12}>
                     <Box textAlign="center" p={2} mb={2}>
                         <Typography variant="h4">  <Box m={3}>
-                            <Button type="submit" variant="contained" color="primary"onSubmit={sendEmail} >Send Message</Button>
+                            <Button type="submit" variant="contained" color="primary" onSubmit={sendEmail} >Send Message</Button>
                         </Box></Typography>
                     </Box>
                     <form noValidate>
                         <Grid container spacing={2}>
                             <Grid item xs={12}>
-                                <TextField autoComplete="mail" name="mail" variant="outlined" required fullWidth id="mail" label="Mail" value={quote.mail} onChange={e => onTextFieldChange(e)}
+                                <TextField autoComplete="email" name="email" variant="outlined" required fullWidth id="email" label="Mail" value={quote.email} onChange={e => onTextFieldChange(e)}
                                 />
                             </Grid>
                             <Grid item xs={12}>
@@ -83,19 +81,18 @@ const EditQuote = () => {
                             <Grid item xs={12}>
                                 <TextField autoComplete="QuoteAmount" name="QuoteAmount" variant="outlined" required fullWidth id="QuoteAmount" label="QuoteAmount" value={quote.QuoteAmount} onChange={e => onTextFieldChange(e)} />
                             </Grid>
-                           
                         </Grid>
                         <Box m={3}>
                             <Button type="submit" variant="contained" color="primary" fullWidth onClick={e => onFormSubmit(e)} >Submit Quote</Button>
                         </Box>
-                      
                     </form>
                 </Grid>
                 <Grid item md={6} xs={12}>
                 </Grid>
             </Grid>
         </>
-    )}
+    )
+}
 
 
 export default EditQuote

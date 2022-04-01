@@ -13,7 +13,7 @@ const AddService = () => {
   });
 
   const [status, setStatus] = useState();
-  
+
   function onTextFieldChange(e) {
     setService({
       ...service,
@@ -32,7 +32,7 @@ const AddService = () => {
     }
   }
   if (status) {
-    return <Service/>
+    return <Service />
 
   }
   return (
@@ -46,7 +46,6 @@ const AddService = () => {
           </Box>
           <form noValidate>
             <Grid container spacing={2}>
-            
               <Grid item xs={12}>
                 <TextField autoComplete="stuname" name="title" variant="outlined" required fullWidth id="title" label="Title" onChange={e => onTextFieldChange(e)}
                 />

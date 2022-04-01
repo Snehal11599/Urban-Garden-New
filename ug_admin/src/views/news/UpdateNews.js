@@ -1,20 +1,17 @@
-import { Typography, Box,  Grid, TextField, Button } from "@material-ui/core"
+import { Typography, Box, Grid, TextField, Button } from "@material-ui/core"
 import axios from "axios";
 import { useState, useEffect } from "react";
-import {  useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 const UpdateNews = () => {
   const { id } = useParams();
-  
+
   const [service, setService] = useState({
     id: "",
-    name: "",
     author: "",
     title: "",
     desp: "",
-    url: "",
     urlToImage: "",
     publishedAt: "",
-    content: "",
   });
   useEffect(() => {
     async function getService() {
@@ -50,7 +47,6 @@ const UpdateNews = () => {
   return (
     <>
       <Box textAlign="center" p={2} mb={2}>
-
       </Box>
       <Grid container justifyContent="center" spacing={4}>
         <Grid item md={6} xs={12}>
@@ -63,10 +59,7 @@ const UpdateNews = () => {
                 <TextField autoComplete="id" name="id" variant="outlined" required fullWidth id="id" label="Id" value={id} disabled
                 />
               </Grid>
-              <Grid item xs={12}>
-                <TextField autoComplete="name" name="name" variant="outlined" required fullWidth id="name" label="Name" value={service.name} onChange={e => onTextFieldChange(e)}
-                />
-              </Grid>
+              
               <Grid item xs={12}>
                 <TextField autoComplete="author" name="author" variant="outlined" required fullWidth id="author" label="Author" value={service.author} onChange={e => onTextFieldChange(e)}
                 />
@@ -80,10 +73,6 @@ const UpdateNews = () => {
                 />
               </Grid>
               <Grid item xs={12}>
-                <TextField autoComplete="url" name="url" variant="outlined" required fullWidth id="url" label="URl" value={service.url} onChange={e => onTextFieldChange(e)}
-                />
-              </Grid>
-              <Grid item xs={12}>
                 <TextField autoComplete="urlToImage" name="urlToImage" variant="outlined" required fullWidth id="UrlToImage" label="urlToImage" value={service.urlToImage} onChange={e => onTextFieldChange(e)}
                 />
               </Grid>
@@ -91,18 +80,13 @@ const UpdateNews = () => {
                 <TextField autoComplete="publishedAt" name="publishedAt" variant="outlined" required fullWidth id="publishedAt" label="PublisheAt" value={service.publishedAt} onChange={e => onTextFieldChange(e)}
                 />
               </Grid>
-              <Grid item xs={12}>
-                <TextField autoComplete="content" name="content" variant="outlined" required fullWidth id="content" label="Content" value={service.content} onChange={e => onTextFieldChange(e)} />
-              </Grid>
             </Grid>
             <Box m={3}>
               <Button type="submit" variant="contained" color="primary" fullWidth onClick={e => onFormSubmit(e)} >Update</Button>
             </Box>
           </form>
         </Grid>
-
         <Grid item md={6} xs={12}>
-
         </Grid>
       </Grid>
     </>

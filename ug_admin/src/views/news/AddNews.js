@@ -12,7 +12,7 @@ const AddNews = () => {
     url: "",
     urlToImage: "",
     publishedAt: "",
-    
+
   });
   const [status, setStatus] = useState();
   function onTextFieldChange(e) {
@@ -44,11 +44,6 @@ const AddNews = () => {
           </Box>
           <form noValidate>
             <Grid container spacing={2}>
-             
-              <Grid item xs={12}>
-                <TextField autoComplete="stuname" name="name" variant="outlined" required fullWidth id="name" label="Name" onChange={e => onTextFieldChange(e)}
-                />
-              </Grid>
               <Grid item xs={12}>
                 <TextField autoComplete="email" name="author" variant="outlined" required fullWidth id="author" label="author" onChange={e => onTextFieldChange(e)} />
               </Grid>
@@ -59,19 +54,14 @@ const AddNews = () => {
               <Grid item xs={12}>
                 <TextField autoComplete="email" name="desp" variant="outlined" required fullWidth id="desp" label="Description" onChange={e => onTextFieldChange(e)} />
               </Grid>
+
               <Grid item xs={12}>
-                <TextField autoComplete="email" name="url" variant="outlined" required fullWidth id="url" label="url" onChange={e => onTextFieldChange(e)} />
-              </Grid>
-               <Grid item xs={12}>
                 <TextField autoComplete="email" name="urlToImage" variant="outlined" required fullWidth id="urlToImage" label="urlToImage" onChange={e => onTextFieldChange(e)} />
               </Grid>
               <Grid item xs={12}>
                 <TextField autoComplete="email" name="publishedAt" variant="outlined" required fullWidth id="publishedAt" label="publishedAt" onChange={e => onTextFieldChange(e)} />
               </Grid>
-              <Grid item xs={12}>
-                <TextField autoComplete="email" name="content" variant="outlined" required fullWidth id="content" label="content" onChange={e => onTextFieldChange(e)} />
-              </Grid>
-              </Grid>
+            </Grid>
             <Box m={3}>
               <Button type="submit" variant="contained" color="primary" fullWidth onClick={e => onFormSubmit(e)} >Add</Button>
             </Box>

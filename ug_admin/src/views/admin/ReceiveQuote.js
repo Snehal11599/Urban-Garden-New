@@ -20,7 +20,7 @@ const ReceiveQuote = () => {
       getquote();
    }, [])
 
-//delete  data
+   //delete  data
    const handleDelete = async id => {
       await axios.delete(`http://localhost:3001/Quotation/${id}`);
       var newquote = quote.filter((item) => {
@@ -30,11 +30,10 @@ const ReceiveQuote = () => {
    }
 
    return (
-      <div className ="content">
+      <div className="content">
          <Row>
             <Col md="20">
-            
-    <h5 className="card-title">Hello Admin...</h5>
+               <h5 className="card-title">Hello Admin...</h5>
                <TableContainer component={Paper}>
                   <Table>
                      <TableHead>
@@ -50,29 +49,28 @@ const ReceiveQuote = () => {
                         </TableRow>
                      </TableHead>
                      <TableBody>
-                        { quote.map((quote, i) => {
-                              return (
-                                 <TableRow key={i}>
-                                    <TableCell align="center">{quote.id}</TableCell>
-                                    <TableCell align="center">{quote.name}</TableCell>
-                                    <TableCell align="center">{quote.mail}</TableCell>
-                                    <TableCell align="center">{quote.GardeningAddress}</TableCell>
-                                    <TableCell align="center">{quote.GardeningArea}</TableCell>
-                                    <TableCell align="center">{quote.GardenImages}</TableCell>
-                                    <TableCell align="center">{quote.WorkDescription}</TableCell>
-                                    <TableCell align="center">
-                                       <Tooltip title="Edit">
-                                          <IconButton><Link to={`EditQuote/${quote.id}`}><EditIcon /></Link></IconButton>
-                                       </Tooltip>
-                                       <Tooltip title="Delete">
-                                          <IconButton onClick={() => handleDelete(quote.id)} ><DeleteIcon color="secondary" /></IconButton>
-                                       </Tooltip>
-                                    </TableCell>
-                                 </TableRow>
-                              )
-                           })
+                        {quote.map((quote, i) => {
+                           return (
+                              <TableRow key={i}>
+                                 <TableCell align="center">{quote.id}</TableCell>
+                                 <TableCell align="center">{quote.name}</TableCell>
+                                 <TableCell align="center">{quote.email}</TableCell>
+                                 <TableCell align="center">{quote.GardeningAddress}</TableCell>
+                                 <TableCell align="center">{quote.GardeningArea}</TableCell>
+                                 <TableCell align="center">{quote.GardenImages}</TableCell>
+                                 <TableCell align="center">{quote.WorkDescription}</TableCell>
+                                 <TableCell align="center">
+                                    <Tooltip title="Edit">
+                                       <IconButton><Link to={`EditQuote/${quote.id}`}><EditIcon /></Link></IconButton>
+                                    </Tooltip>
+                                    <Tooltip title="Delete">
+                                       <IconButton onClick={() => handleDelete(quote.id)} ><DeleteIcon color="secondary" /></IconButton>
+                                    </Tooltip>
+                                 </TableCell>
+                              </TableRow>
+                           )
+                        })
                         }
-
                      </TableBody>
                   </Table>
                </TableContainer>

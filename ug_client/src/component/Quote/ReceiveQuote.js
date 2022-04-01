@@ -1,4 +1,4 @@
-import { TableContainer, Table, TableBody, TableCell, TableHead, TableRow, Paper,Button} from "@material-ui/core";
+import { TableContainer, Table, TableBody, TableCell, TableHead, TableRow, Paper, Button } from "@material-ui/core";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Row, Col } from "reactstrap";
@@ -10,7 +10,6 @@ const ReceiveQuote = () => {
       async function getquote() {
          try {
             const quote = await axios.get("http://localhost:3001/Quotation")
-
             setquote(quote.data);
          } catch (error) {
             console.log("Something is Wrong");
@@ -19,17 +18,14 @@ const ReceiveQuote = () => {
       getquote();
    }, [])
 
-
-
    return (
-      <div className ="content">
+      <div className="content">
          <Row>
             <Col md="20">
-            
-    <h5 className="card-title"> Hello User </h5>
-    <NavLink  to="/AddQuotes">
-    <Button className='text-center' variant="contained" color="primary"  >SubmitRequest</Button>
-    </NavLink>
+               <h5 className="card-title"> Hello User </h5>
+               <NavLink to="/AddQuotes">
+                  <Button className='text-center' variant="contained" color="primary"  >Submit Request</Button>
+               </NavLink>
                <TableContainer component={Paper}>
                   <Table>
                      <TableHead>
@@ -44,26 +40,21 @@ const ReceiveQuote = () => {
                         </TableRow>
                      </TableHead>
                      <TableBody>
-                        { quote.map((quote, i) => {
-                              return (
-                                 <TableRow key={i}>
-                                    <TableCell align="center">{quote.name}</TableCell>
-                                    <TableCell align="center">{quote.GardeningAddress}</TableCell>
-                                    <TableCell align="center">{quote.GardeningArea}</TableCell>
-                                    <TableCell align="center">{quote.GardenImages}</TableCell>
-                                    <TableCell align="center">{quote.WorkDescription}</TableCell>
-                                    <TableCell align="center">{quote.QuoteAmount}</TableCell>
-                                    <TableCell align="center">
-                                       
-                                       {/* <Tooltip title="SubmotQuote">
-                                          <Button variant="contained" color="primary"  >SubmitQuote</Button>
-                                       </Tooltip> */}
-                                    </TableCell>
-                                 </TableRow>
-                              )
-                           })
+                        {quote.map((quote, i) => {
+                           return (
+                              <TableRow key={i}>
+                                 <TableCell align="center">{quote.name}</TableCell>
+                                 <TableCell align="center">{quote.GardeningAddress}</TableCell>
+                                 <TableCell align="center">{quote.GardeningArea}</TableCell>
+                                 <TableCell align="center">{quote.GardenImages}</TableCell>
+                                 <TableCell align="center">{quote.WorkDescription}</TableCell>
+                                 <TableCell align="center">{quote.QuoteAmount}</TableCell>
+                                 <TableCell align="center">
+                                 </TableCell>
+                              </TableRow>
+                           )
+                        })
                         }
-
                      </TableBody>
                   </Table>
                </TableContainer>

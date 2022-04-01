@@ -1,5 +1,4 @@
 import { TableContainer, Table, TableBody, TableCell, TableHead, TableRow, Paper, Tooltip, Button } from "@material-ui/core"
-
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -27,10 +26,10 @@ const Article = () => {
    }
    return (
       <div className="content">
-         <Link to='AddArticles'>
+         <Link to='AddNews'>
             <Button variant="contained"
                color="primary">
-               Create Articles
+               Create News
             </Button>
          </Link>
          <Row>
@@ -76,7 +75,6 @@ const Article = () => {
                               )
                            })
                         }
-
                      </TableBody>
                   </Table>
                </TableContainer>

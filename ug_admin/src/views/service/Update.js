@@ -29,9 +29,8 @@ const Update = () => {
             [e.target.name]: e.target.value
         })
 
-    
-    }
 
+    }
     // edit service data
     async function onFormSubmit(e) {
         e.preventDefault()
