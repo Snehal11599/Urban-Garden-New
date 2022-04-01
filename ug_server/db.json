@@ -1,58 +1,40 @@
 {
   "articles": [
     {
-      "id": "3",
-      "name": "CleanTechnica prajakta danake",
-      "author": "Johnna Crider Pune Wakad",
-      "title": "Tesla Master Plan Part 3 — Coming Soon",
-      "desp": "Tesla CEO Elon Musk has shared on Twitter that he’s working on Master Plan Part 3. Tesla’s success, which is shocking to those who thought that Tesla would fail, is based on a well-thought-out master plan that evolved into two parts. Now, Elon’s continuing th…",
-      "url": "https://cleantechnica.com/2022/03/22/tesla-master-plan-part-3-coming-soon/",
-      "urlToImage": "https://cleantechnica.com/files/2019/09/Tesla-Model-3-S-X-Fleet-Red-White-Blue-Supercharging-Florida-National-Drive-Electric-Week-Metro.jpg",
-      "publishedAt": "2022-03-22T05:05:14Z jffheufhfuehfbbhcbcbchvddcdscdffcdccccccdcddccccdc",
-      "content": "Tesla CEO Elon Musk has shared on Twitter that he’s working on Master Plan Part 3. Tesla’s success, which is shocking to those who thought that Tesla would fail, is based on a well-thought-out master… [+3056 chars]"
-    },
-    {
-      "id": "xsc",
+      "id": 1,
       "name": "",
       "author": "",
-      "title": "xxzx",
-      "desp": "",
+      "title": "Why You Have Difficult To Clean Lawn",
+      "desp": "We provide high quality design at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores...",
       "url": "",
-      "urlToImage": "",
-      "publishedAt": "",
+      "urlToImage": "https://html.rometheme.pro/gaco/images/news-img-1.jpg",
+      "publishedAt": "30 june 2021",
+      "content": ""
+    },
+    {
+      "id": 2,
+      "name": "",
+      "author": "",
+      "title": "We Open Recruitment for Landscaping",
+      "desp": "We provide high quality design at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores...",
+      "url": "",
+      "urlToImage": "https://html.rometheme.pro/gaco/images/news-img-2.jpg",
+      "publishedAt": "30 MAY",
       "content": ""
     }
   ],
   "service": [
     {
-      "title": "Landscape Design and gardeningcncmmc and planting",
-      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, s",
-      "image": "https://html.rometheme.pro/gaco/images/services-img-2.jpg",
-      "id": "1"
+      "id": 1,
+      "title": "Landscape Design",
+      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.",
+      "urltoimage": "https://html.rometheme.pro/gaco/images/services-img-1.jpg"
     },
     {
-      "title": "Planting and removing",
-      "decription": "the transplantation of larger trees in arboriculture.",
-      "image": "https://html.rometheme.pro/gaco/images/services-img-3.jpg",
-      "id": "12"
-    },
-    {
-      "title": "jkddd",
-      "decription": "mdndnbndnd"
-    },
-    {
-      "title": "gardening",
-      "decription": "planting"
-    },
-    {
-      "title": "rt",
-      "decription": "ryt",
-      "id": "0zvK6iQ"
-    },
-    {
-      "title": "wd",
-      "decription": "xcxzc",
-      "id": "e_7vTBl"
+      "id": 2,
+      "title": "Planting & Removal",
+      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.",
+      "urltoimage": "https://html.rometheme.pro/gaco/images/services-img-2.jpg"
     }
   ],
   "Register": [
@@ -292,16 +274,8 @@
   "Quotation": [
     {
       "id": 1,
-      "name": "riya jadhav",
-      "GardeningAddress": "wakad pune",
-      "GardeningArea": "4567sq foot",
-      "GardenImages": "C:\\fakepath\\urbangardenproject.png",
-      "WorkDescription": "Maintain and grow the garden to ensure it meets specific requirements and expectations.",
-      "QuoteAmount": "12312"
-    },
-    {
-      "id": 2,
       "name": "ratan patil",
+      "email": "khuysh@gmail",
       "GardeningAddress": "hadapsar pune",
       "GardeningArea": "5657sq foot",
       "GardenImages": "C:\\fakepath\\urbangardenproject.png",

@@ -10,7 +10,7 @@ import AddNews from "./views/news/AddNews";
 
 
 var routes = [
- {
+  {
     path: "/dashboard",
     name: "Dashboard",
     icon: "nc-icon nc-bank",
@@ -37,13 +37,13 @@ var routes = [
     component: News,
     layout: "/admin",
   },
-{
-  path: "/Service",
+  {
+    path: "/Service",
     name: "Service_Table",
     icon: "nc-icon nc-spaceship",
     component: Service,
     layout: "/admin",
-  },{
+  }, {
     path: "/AddService",
     name: "Add Service",
     icon: "nc-icon nc-spaceship",
@@ -68,10 +68,10 @@ var routes = [
     path: "/EditQuote/:id",
     name: "Edit quote",
     icon: "nc-icon nc-caps-small",
-    component:EditQuote,
+    component: EditQuote,
     layout: "/admin",
   }
- 
- 
+
+
 ];
 export default routes;

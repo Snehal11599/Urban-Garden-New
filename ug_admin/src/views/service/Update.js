@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 const Update = () => {
     const { id } = useParams();
     const [service, setService] = useState({
+        id: "",
         title: "",
         decription: ""
     });
@@ -28,9 +29,8 @@ const Update = () => {
             [e.target.name]: e.target.value
         })
 
-    
-    }
 
+    }
     // edit service data
     async function onFormSubmit(e) {
         e.preventDefault()

@@ -6,12 +6,14 @@ import Service from "../service/Service"
 
 const AddService = () => {
   const [service, setService] = useState({
+    id: "",
     title: "",
-    decription: ""
+    decription: "",
+    urltoimage: ""
   });
 
   const [status, setStatus] = useState();
-  
+
   function onTextFieldChange(e) {
     setService({
       ...service,
@@ -23,14 +25,14 @@ const AddService = () => {
   async function onFormSubmit(e) {
     e.preventDefault()
     try {
-      await axios.post(`http://localhost:3001/service`, service)
+      await axios.post(` http://localhost:3001/service`, service)
       setStatus(true);
     } catch (error) {
       console.log("Something is Wrong");
     }
   }
   if (status) {
-    return <Service/>
+    return <Service />
 
   }
   return (
@@ -44,13 +46,16 @@ const AddService = () => {
           </Box>
           <form noValidate>
             <Grid container spacing={2}>
-            
               <Grid item xs={12}>
                 <TextField autoComplete="stuname" name="title" variant="outlined" required fullWidth id="title" label="Title" onChange={e => onTextFieldChange(e)}
                 />
               </Grid>
               <Grid item xs={12}>
                 <TextField autoComplete="email" name="decription" variant="outlined" required fullWidth id="description" label="Description" onChange={e => onTextFieldChange(e)} />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField autoComplete="urltoimage" name="urltoimage" variant="outlined" required fullWidth id="urltoimage" label="urltoimage" onChange={e => onTextFieldChange(e)}
+                />
               </Grid>
             </Grid>
             <Box m={3}>
