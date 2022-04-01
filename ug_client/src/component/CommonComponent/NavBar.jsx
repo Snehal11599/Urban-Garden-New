@@ -72,7 +72,10 @@ export default function NavBar() {
                 Contact Us
               </NavLink>
             </li>
-             <li className="nav-item dropdown">
+
+
+
+            <li className="nav-item dropdown">
               <NavLink
                 className="nav-link dropdown-toggle"
                 to="/pages"
@@ -89,22 +92,23 @@ export default function NavBar() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/dashboard">
+                  <NavLink className="nav-link" to="/Login">
                     Admin
                   </NavLink>
                 </li>
-              </ul>
+               </ul>
             </li>
-             <li className="d-grid gap-2 col-2 mx-auto">
-              <button className="btn btn-success text-white"style={{ color: "#rgb(139, 173, 33" }}>
-                <NavLink className="nav-link" to="/Register">
+             </ul>
+          
+        </div>
+
+        <li className=" gap-10 text-white">
+              <button className="btn btn-success text-white" >
+                <NavLink className="hhh" to="/Register">
                 Register
                 </NavLink>
               </button>
            </li>
-       
-          </ul>
-        </div>
       </div>
     </nav>
   );

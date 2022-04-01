@@ -26,9 +26,9 @@ const ReceiveQuote = () => {
          <Row>
             <Col md="20">
             
-    <h5 className="card-title"> User Table...</h5>
-    <NavLink  to="/AddQuote">
-    <Button className='text-center' variant="contained" color="primary"  >AddQuote</Button>
+    <h5 className="card-title"> Hello User </h5>
+    <NavLink  to="/AddQuotes">
+    <Button className='text-center' variant="contained" color="primary"  >SubmitRequest</Button>
     </NavLink>
                <TableContainer component={Paper}>
                   <Table>
