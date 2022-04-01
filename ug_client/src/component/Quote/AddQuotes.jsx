@@ -5,8 +5,10 @@ import ReceiveQuote from "./ReceiveQuote";
 const AddService = () => {
   const [service, setService] = useState({
     name:"",
+    email:"",
         GardeningAddress: "",
         GardeningArea: "",
+        
         GardenImages:"",
         WorkDescription:"",
   });
@@ -36,10 +38,10 @@ const AddService = () => {
   }
   return (
     <>
-      <Box textAlign="center" p={3} mb={2}>
+      <Box textAlign="center" p={2} mb={2}>
       </Box>
       <Grid container justifyContent="center" spacing={4}>
-        <Grid item md={4} xs={12}>
+        <Grid item md={3} xs={12}>
           <Box textAlign="center" p={2} mb={2}>
             <Typography variant="h4">Add Quote</Typography>
           </Box>
@@ -50,6 +52,15 @@ const AddService = () => {
                                 <TextField autoComplete="name" name="name" variant="outlined" required fullWidth id="name"  value={service.name} onChange={e => onTextFieldChange(e)}
                                 />
                             </Grid>
+                           
+
+
+                              
+                            <Grid item xs={12}>
+                    <lable>Email</lable>
+                                <TextField autoComplete="email" name="email" variant="outlined" required fullWidth id="email" value={service.email} onChange={e => onTextFieldChange(e)}
+                                />
+                            </Grid>
                             <Grid item xs={12}>
                                 
                                 <lable>GardeningArea</lable>
@@ -57,6 +68,11 @@ const AddService = () => {
                             </Grid>
 
 
+                            <Grid item xs={12}>
+                    <lable>GardeningAddress</lable>
+                                <TextField autoComplete="GardeningAddress" name="GardeningAddress" variant="outlined" required fullWidth id="GardeningAddress" value={service.GardeningAddress} onChange={e => onTextFieldChange(e)}
+                                />
+                            </Grid>
 
 
                             <Grid item xs={12}>
