@@ -258,11 +258,20 @@
   "Quotation": [
     {
       "id": 1,
-      "GardeningAddress": "chinchwade",
-      "GardeningArea": "1000",
-      "GardenImages": "",
-      "WorkDescription": "gardening",
-      "QuoteAmount": "200000"
+      "name": "riya jadhav",
+      "GardeningAddress": "wakad pune",
+      "GardeningArea": "4567sq foot",
+      "GardenImages": "C:\\fakepath\\urbangardenproject.png",
+      "WorkDescription": "Maintain and grow the garden to ensure it meets specific requirements and expectations.",
+      "QuoteAmount": "12312"
+    },
+    {
+      "id": 2,
+      "name": "ratan patil",
+      "GardeningAddress": "hadapsar pune",
+      "GardeningArea": "5657sq foot",
+      "GardenImages": "C:\\fakepath\\urbangardenproject.png",
+      "WorkDescription": "Perform basic maintenance such as cutting the grass, emptying bins, managing weed control and leaf raking"
     }
    
   ]

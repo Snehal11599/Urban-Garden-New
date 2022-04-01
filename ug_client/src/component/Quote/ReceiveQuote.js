@@ -1,10 +1,8 @@
-import { TableContainer, Table, TableBody, TableCell, TableHead, TableRow, Paper, IconButton, Tooltip } from "@material-ui/core"
-import EditIcon from '@material-ui/icons/Edit';
-import DeleteIcon from '@material-ui/icons/Delete';
-import { Link } from "react-router-dom";
+import { TableContainer, Table, TableBody, TableCell, TableHead, TableRow, Paper,Button} from "@material-ui/core";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Row, Col } from "reactstrap";
+import { NavLink } from "react-router-dom";
 const ReceiveQuote = () => {
    const [quote, setquote] = useState([]);
 
@@ -12,6 +10,7 @@ const ReceiveQuote = () => {
       async function getquote() {
          try {
             const quote = await axios.get("http://localhost:3001/Quotation")
+
             setquote(quote.data);
          } catch (error) {
             console.log("Something is Wrong");
@@ -20,51 +19,45 @@ const ReceiveQuote = () => {
       getquote();
    }, [])
 
-//delete  data
-   const handleDelete = async id => {
-      await axios.delete(`http://localhost:3001/Quotation/${id}`);
-      var newquote = quote.filter((item) => {
-         return item.id !== id;
-      })
-      setquote(newquote);
-   }
+
 
    return (
       <div className ="content">
          <Row>
             <Col md="20">
             
-    <h5 className="card-title">Hello Admin...</h5>
+    <h5 className="card-title"> User Table...</h5>
+    <NavLink  to="/AddQuote">
+    <Button className='text-center' variant="contained" color="primary"  >AddQuote</Button>
+    </NavLink>
                <TableContainer component={Paper}>
                   <Table>
                      <TableHead>
-                        <TableRow style={{ backgroundColor: "#3f51b5" }}>
-                           <TableCell align="center" >Order No</TableCell>
+                        <TableRow style={{ backgroundColor: "#BD10E0" }}>
                            <TableCell align="center" >Name</TableCell>
                            <TableCell align="center">Gardening Address</TableCell>
                            <TableCell align="center" >Gardening Area</TableCell>
                            <TableCell align="center" >Gardening Images</TableCell>
                            <TableCell align="center" >Work Description</TableCell>
-                           <TableCell align="center" >Action</TableCell>
+                           <TableCell align="center" >Quote Amount</TableCell>
+                           {/* <TableCell align="center" >Action</TableCell> */}
                         </TableRow>
                      </TableHead>
                      <TableBody>
                         { quote.map((quote, i) => {
                               return (
                                  <TableRow key={i}>
-                                    <TableCell align="center">{quote.id}</TableCell>
                                     <TableCell align="center">{quote.name}</TableCell>
                                     <TableCell align="center">{quote.GardeningAddress}</TableCell>
                                     <TableCell align="center">{quote.GardeningArea}</TableCell>
                                     <TableCell align="center">{quote.GardenImages}</TableCell>
                                     <TableCell align="center">{quote.WorkDescription}</TableCell>
+                                    <TableCell align="center">{quote.QuoteAmount}</TableCell>
                                     <TableCell align="center">
-                                       <Tooltip title="Edit">
-                                          <IconButton><Link to={`EditQuote/${quote.id}`}><EditIcon /></Link></IconButton>
-                                       </Tooltip>
-                                       <Tooltip title="Delete">
-                                          <IconButton onClick={() => handleDelete(quote.id)} ><DeleteIcon color="secondary" /></IconButton>
-                                       </Tooltip>
+                                       
+                                       {/* <Tooltip title="SubmotQuote">
+                                          <Button variant="contained" color="primary"  >SubmitQuote</Button>
+                                       </Tooltip> */}
                                     </TableCell>
                                  </TableRow>
                               )

@@ -1,7 +1,6 @@
 import React from 'react'
 import { GiThreeLeaves } from "react-icons/gi";
 import emailjs from 'emailjs-com'
-
 const style = {
     color: "#82B440", position: "center", keyboard: "focusable"
 }
@@ -13,8 +12,7 @@ const ContactForm = () => {
         }).catch(err => console.log(err));
     }
     return (
-        <>
-            <div className="section-heading text-center mb-4">
+        <><div className="section-heading text-center mb-4">
                 <h1 className='py-4'>Send Us A Message</h1>
                 <GiThreeLeaves size="3rem" style={style} />
                 <p className="text-muted">Consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta.</p>
