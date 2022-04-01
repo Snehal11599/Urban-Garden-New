@@ -41,6 +41,7 @@ const ReceiveQuote = () => {
                         <TableRow style={{ backgroundColor: "#3f51b5" }}>
                            <TableCell align="center" >Order No</TableCell>
                            <TableCell align="center" >Name</TableCell>
+                           <TableCell align="center" >Email</TableCell>
                            <TableCell align="center">Gardening Address</TableCell>
                            <TableCell align="center" >Gardening Area</TableCell>
                            <TableCell align="center" >Gardening Images</TableCell>
@@ -54,6 +55,7 @@ const ReceiveQuote = () => {
                                  <TableRow key={i}>
                                     <TableCell align="center">{quote.id}</TableCell>
                                     <TableCell align="center">{quote.name}</TableCell>
+                                    <TableCell align="center">{quote.mail}</TableCell>
                                     <TableCell align="center">{quote.GardeningAddress}</TableCell>
                                     <TableCell align="center">{quote.GardeningArea}</TableCell>
                                     <TableCell align="center">{quote.GardenImages}</TableCell>

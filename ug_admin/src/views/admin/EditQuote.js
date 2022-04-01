@@ -2,11 +2,14 @@ import { Typography, Box, Grid, TextField, Button } from "@material-ui/core"
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import emailjs from 'emailjs-com'
+
 
 
 const EditQuote = () => {
     const { id } = useParams();
     const [quote, setQuote] = useState({
+        mail: "",
         GardeningAddress: "",
         GardeningArea: "",
         GardenImages:"",
@@ -29,9 +32,16 @@ const EditQuote = () => {
             ...quote,
             [e.target.name]: e.target.value
         })
+   }
 
-    
-    }
+
+   function sendEmail(e) {
+    e.preventDefault();
+    emailjs.sendForm("service_b3nh3g9", "template_tbkloo6", e.target, "nFxs7WI33NkoTBKnZ").then(res => {
+        alert('Message Sent Successfully')
+        console.log(res);
+    }).catch(err => console.log(err));
+}
 
     // edit quote data
     async function onFormSubmit(e) {
@@ -50,12 +60,14 @@ const EditQuote = () => {
             <Grid container justifyContent="center" spacing={4}>
                 <Grid item md={6} xs={12}>
                     <Box textAlign="center" p={2} mb={2}>
-                        <Typography variant="h4"></Typography>
+                        <Typography variant="h4">  <Box m={3}>
+                            <Button type="submit" variant="contained" color="primary"onSubmit={sendEmail} >Send Message</Button>
+                        </Box></Typography>
                     </Box>
                     <form noValidate>
                         <Grid container spacing={2}>
                             <Grid item xs={12}>
-                                <TextField autoComplete="orderno" name="orderno" variant="outlined" required fullWidth id="orderno" label="Order no" value={quote.id} onChange={e => onTextFieldChange(e)}
+                                <TextField autoComplete="mail" name="mail" variant="outlined" required fullWidth id="mail" label="Mail" value={quote.mail} onChange={e => onTextFieldChange(e)}
                                 />
                             </Grid>
                             <Grid item xs={12}>
@@ -76,13 +88,14 @@ const EditQuote = () => {
                         <Box m={3}>
                             <Button type="submit" variant="contained" color="primary" fullWidth onClick={e => onFormSubmit(e)} >Submit Quote</Button>
                         </Box>
+                      
                     </form>
                 </Grid>
                 <Grid item md={6} xs={12}>
                 </Grid>
             </Grid>
         </>
-    )
-}
+    )}
+
 
 export default EditQuote

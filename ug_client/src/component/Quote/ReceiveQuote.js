@@ -33,7 +33,7 @@ const ReceiveQuote = () => {
                <TableContainer component={Paper}>
                   <Table>
                      <TableHead>
-                        <TableRow style={{ backgroundColor: "#BD10E0" }}>
+                        <TableRow style={{ backgroundColor: "#8bc34a" }}>
                            <TableCell align="center" >Name</TableCell>
                            <TableCell align="center">Gardening Address</TableCell>
                            <TableCell align="center" >Gardening Area</TableCell>
