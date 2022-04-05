@@ -1,10 +1,9 @@
 {
   "articles": [
     {
-<<<<<<< Updated upstream
       "id": 1,
       "name": "",
-      "author": "",
+      "author": "danny",
       "title": "Why You Have Difficult To Clean Lawn",
       "desp": "We provide high quality design at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores...",
       "url": "",
@@ -13,31 +12,17 @@
       "content": ""
     },
     {
-      "id": 2,
-      "name": "",
-      "author": "",
-      "title": "We Open Recruitment for Landscaping",
-      "desp": "We provide high quality design at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores...",
+      "id": 3,
+      "author": "john",
+      "title": "We Offer 30% Cashback on Flower Garden",
+      "desp": " We provide high quality design at vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos",
       "url": "",
-      "urlToImage": "https://html.rometheme.pro/gaco/images/news-img-2.jpg",
-      "publishedAt": "30 MAY",
-      "content": ""
-=======
-      "id": "166565",
-      "name": "sgfg",
-      "author": "fvf",
-      "title": "ffd",
-      "desp": "fg",
-      "url": "gdfg",
-      "urlToImage": "fgdf",
-      "publishedAt": "dfgdf",
-      "content": "fdgfd"
->>>>>>> Stashed changes
+      "urlToImage": "https://html.rometheme.pro/gaco/images/news-img-3.jpg",
+      "publishedAt": " 2022-03-30T03:37:40442"
     }
   ],
   "service": [
     {
-<<<<<<< Updated upstream
       "id": 1,
       "title": "Landscape Design",
       "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.",
@@ -48,20 +33,12 @@
       "title": "Planting & Removal",
       "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.",
       "urltoimage": "https://html.rometheme.pro/gaco/images/services-img-2.jpg"
-=======
-      "title": "Planting and removing",
-      "decription": "the transplantation of larger trees in arboriculture.",
-      "image": "https://html.rometheme.pro/gaco/images/services-img-3.jpg",
-      "id": "12"
     },
     {
-      "title": "jkddd",
-      "decription": "mdndnbndnd"
-    },
-    {
-      "title": "gardening",
-      "decription": "planting"
->>>>>>> Stashed changes
+      "id": 3,
+      "title": "Garden Care and planting gardening jh",
+      "decription": "Best garden, lawn maintenance contractors in Mumbai for maintaining the garden naturally by watering, staking, mulching and other garden care methods by expert professionals.",
+      "urltoimage": " https://html.rometheme.pro/gaco/images/services-img-3.jpg"
     }
   ],
   "Register": [
@@ -296,9 +273,16 @@
       "email": "sccx",
       "password": "sccsdc",
       "id": "vg7AuAm"
+    },
+    {
+      "name": "khushali",
+      "surname": "rao",
+      "contact": "23457676",
+      "email": "khus@gmail.com",
+      "password": "12334",
+      "id": "fS8Oq4n"
     }
   ],
-<<<<<<< Updated upstream
   "Quotation": [
     {
       "id": 1,
@@ -307,10 +291,28 @@
       "GardeningAddress": "hadapsar pune",
       "GardeningArea": "5657sq foot",
       "GardenImages": "C:\\fakepath\\urbangardenproject.png",
-      "WorkDescription": "Perform basic maintenance such as cutting the grass, emptying bins, managing weed control and leaf raking"
+      "WorkDescription": "Perform basic maintenance such as cutting the grass, emptying bins, managing weed control and leaf raking",
+      "QuoteAmount": "20000"
+    },
+    {
+      "name": "ashok rao",
+      "email": "ashok@gmail.com",
+      "GardeningAddress": " Wing A, Level 3, Magarpatta City, Pune,",
+      "GardeningArea": "2000",
+      "GardenImages": "C:\\fakepath\\garden1.jpeg",
+      "WorkDescription": " trimming trees and shrubs, fertilizing and mowing lawns, weeding gardens",
+      "id": 2,
+      "QuoteAmount": "80120"
+    },
+    {
+      "name": "khushali",
+      "email": "khushaliargade@gmail.com",
+      "GardeningAddress": "pune",
+      "GardeningArea": "5000",
+      "GardenImages": "img",
+      "WorkDescription": "gardening",
+      "id": 4,
+      "QuoteAmount": "9000"
     }
   ]
-=======
-  "Quotation": []
->>>>>>> Stashed changes
 }

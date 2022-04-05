@@ -1,4 +1,4 @@
-import { TableContainer, Table, TableBody, TableCell, TableHead, TableRow, Paper, Button } from "@material-ui/core";
+import { TableContainer, Table, TableBody, TableCell, TableHead, TableRow, Paper } from "@material-ui/core";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Row, Col } from "reactstrap";
@@ -24,7 +24,7 @@ const ReceiveQuote = () => {
             <Col md="20">
                <h5 className="card-title"> Hello User </h5>
                <NavLink to="/AddQuotes">
-                  <Button className='text-center' variant="contained" color="primary"  >Submit Request</Button>
+                  <button className="btn btn-success text-white" >  Submit Quote </button>
                </NavLink>
                <TableContainer component={Paper}>
                   <Table>
