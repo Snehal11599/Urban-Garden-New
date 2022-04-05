@@ -70,7 +70,7 @@ function onTextFieldChange(e) {
                     <label>Garden Images</label>
                                 <TextField type="file" autoComplete="GardenImages" name="GardenImages" variant="outlined" required fullWidth id="GardenImages" value={service.GardenImages} onChange={e => onTextFieldChange(e)} />
                             </Grid>
-             </Grid>
+                             </Grid>
             <Box m={3}>
               <Button type="submit" variant="contained" color="primary" fullWidth onClick={e => onFormSubmit(e)} >Add</Button>
             </Box>
@@ -82,4 +82,5 @@ function onTextFieldChange(e) {
     </>
   )
 }
+
 export default AddService
