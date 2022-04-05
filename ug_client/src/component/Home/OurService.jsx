@@ -3,7 +3,8 @@ const OurService = () => {
   return (
     <div
       className="section-heading text-center mb-4"
-      style={{ margin: "70px", padding: "50px", font: "serif" }}>
+      style={{ margin: "70px", padding: "50px", font: "serif" }}> 
+      
       <h1> Our Services </h1>
       <img src="/assets/HomeImages/decor.png" alt="icon" />
       <div

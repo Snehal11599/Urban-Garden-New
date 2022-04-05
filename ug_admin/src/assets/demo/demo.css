@@ -67,7 +67,7 @@
   z-index: 1;
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 10px) {
   .sidebar .nav>li.active-pro {
     position: absolute;
     width: 100%;

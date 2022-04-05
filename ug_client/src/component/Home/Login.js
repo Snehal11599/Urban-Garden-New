@@ -35,20 +35,11 @@ const Login = ({ onSubmit }) => {
       <Form.Group controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Remember Me!" />
       </Form.Group>
-<<<<<<< Updated upstream
-      <NavLink className="nav-link" to="/ReceiveQuote">
-        <Button variant="primary" type="submit" block>
-          Login
-        </Button>
-        </NavLink>
-     
-=======
       {/* <NavLink className="nav-link" to="/ReceiveQuote"> */}
       <Button onClick={multiuser} variant="primary" type="submit" block>
         Login
       </Button>
       {/* </NavLink> */}
->>>>>>> Stashed changes
     </Form>
   );
 };
