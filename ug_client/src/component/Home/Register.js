@@ -14,22 +14,19 @@ const Register = () => {
       ...register,
       [e.target.name]: e.target.value
     })
-    console.log(register);
-  }
+    console.log(register);}
   async function onFormSubmit(e) {
     e.preventDefault()
     try {
-      await axios.post(`http://localhost:3001/Register`, register)
+      await axios.post(`http://localhost:3001/Register`,register)
     } catch (error) {
       console.log("Something is Wrong");
-    }
-  }
+    }}
   useEffect(() => {
       return () => {
           onFormSubmit()
       };
   })
-  
   return (
     <>
       <Box textAlign="center" p={3} mb={2}></Box>
@@ -41,8 +38,7 @@ const Register = () => {
           <form noValidate>
             <Grid container spacing={5}>
                <Grid item xs={12}>
-                <TextField autoComplete="name" name="name" variant="outlined" required fullWidth id="name" label="Name" onChange={e => onTextFieldChange(e)}
-                />
+                <TextField autoComplete="name" name="name" variant="outlined" required fullWidth id="name" label="Name" onChange={e => onTextFieldChange(e)}/>
               </Grid>
               <Grid item xs={12}>
                 <TextField autoComplete="sarname" name="surname" variant="outlined" required fullWidth id="surname" label="Surname" onChange={e => onTextFieldChange(e)} />
@@ -68,5 +64,4 @@ const Register = () => {
     </>
   )
 }
-
 export default Register

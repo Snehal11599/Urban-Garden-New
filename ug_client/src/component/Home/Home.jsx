@@ -11,8 +11,7 @@ export default function Home() {
       <div>
         <Carousel />
         <CenterCard />
-        
-      </div>
+        </div>
       <OurService/>
       <RecentProject/>
       <OurLatestBlog/>
