@@ -18,21 +18,23 @@ import AddService from './component/Quote/AddQuotes';
 function App() {
   return (
     <>
-      <NavBar />
+      <NavBar/>
        <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/service" element={<Service />} />
-        <Route exact path="/contactus" element={<ContactUs />} />
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/service" element={<Service/>}/>
+        <Route exact path="/contactus" element={<ContactUs/>}/>
         <Route exact path='/gallery' element={<Gallery />} />
-        <Route exact path='/testimonials' element={<Testimonials />} />
-        <Route exact path='/faq' element={<Faq />} />
-        <Route exact path='/news' element={<News />} />
-        <Route exact path='/singlenews' element={<SingleNews />} />
-        <Route exact path='/Login' element={<Login />} />
-        <Route exact path='/Register' element={<Register />} />
-        <Route exact path='/ReceiveQuote' element={<ReceiveQuote />} />
-         <Route exact path='/AddQuotes' element={<AddService />} />
+        <Route exact path='/testimonials' element={<Testimonials/>}/>
+        <Route exact path='/faq' element={<Faq/>}/>
+        <Route exact path='/news' element={<News/>} />
+        <Route exact path='/singlenews' element={<SingleNews/>}/>
+        <Route exact path='/Login' element={<Login/>}/>
+        <Route exact path='/Register' element={<Register/>}/>
+        <Route exact path='/ReceiveQuote' element={<ReceiveQuote/>}/>
+        <Route exact path='/AddQuotes' element={<AddService/>}/>
+        
+
         </Routes>
        <Footer /> 
 
