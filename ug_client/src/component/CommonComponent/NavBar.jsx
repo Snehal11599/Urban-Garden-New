@@ -6,19 +6,20 @@ export default function NavBar() {
       <div className="container-fluid">
         <img
           src="assets/HomeImages/gacoicon.png"
-          alt="logo"  jj
+          alt="logo"  
           style={{ paddingLeft: "10px" }}
         />
         <div
           className="collapse navbar-collapse justify-content-center"
           id="navbarSupportedContent"
+          style={{ backgroundColor: "#8bc34a" }}
         >
           <ul className="navbar-nav p-2">
             <li className="nav-item">
               <NavLink className="nav-link" aria-current="page" to="/">
                 Home
               </NavLink>
-            </li>
+            </li>  
             <li className="nav-item dropdown">
               <NavLink
                 className="nav-link dropdown-toggle"
@@ -27,7 +28,7 @@ export default function NavBar() {
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Pages
+                Features
               </NavLink>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li className="nav-item">
@@ -101,9 +102,8 @@ export default function NavBar() {
              </ul>
           
         </div>
-
-        <li className=" gap-10 text-white">
-              <button className="btn btn-success text-white" >
+        <li className=" gap-10 text-white" >
+              <button className="btn" style={{  backgroundColor: "#82B440"}}  >
                 <NavLink className="hhh" to="/Register">
                 Register
                 </NavLink>

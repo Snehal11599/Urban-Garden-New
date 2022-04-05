@@ -28,8 +28,9 @@ function onTextFieldChange(e) {
       console.log("Something is Wrong");
     }
   }
-  if (status) {
-    return <ReceiveQuote/>}
+  if (status) 
+    return <ReceiveQuote/>
+  }
   return (
     <>
       <Box textAlign="center" p={2} mb={2}>
@@ -70,7 +71,7 @@ function onTextFieldChange(e) {
                     <label>Garden Images</label>
                                 <TextField type="file" autoComplete="GardenImages" name="GardenImages" variant="outlined" required fullWidth id="GardenImages" value={service.GardenImages} onChange={e => onTextFieldChange(e)} />
                             </Grid>
-             </Grid>
+               </Grid>
             <Box m={3}>
               <Button type="submit" variant="contained" color="primary" fullWidth onClick={e => onFormSubmit(e)} >Add</Button>
             </Box>
