@@ -1,8 +1,11 @@
-import { TableContainer, Table, TableBody, TableCell, TableHead, TableRow, Paper, Tooltip, Button } from "@material-ui/core"
+import { TableContainer, Table, TableBody, TableCell, TableHead, TableRow, Paper, Tooltip, IconButton, Button } from "@material-ui/core"
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import EditIcon from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
 import { Row, Col } from "reactstrap";
+
 const Article = () => {
    const [article, setarticle] = useState([]);
    useEffect(() => {
@@ -26,6 +29,7 @@ const Article = () => {
    }
    return (
       <div className="content">
+
          <Link to='AddNews'>
             <Button variant="contained"
                color="primary">
@@ -44,8 +48,8 @@ const Article = () => {
                            <TableCell align="center" >Description</TableCell>
                            <TableCell align="center" >UrlTOImage</TableCell>
                            <TableCell align="center" >PublishedAt</TableCell>
-                           <TableCell align="center" >Action1</TableCell>
-                           <TableCell align="center" >Action1</TableCell>
+                           <TableCell align="center" >Action</TableCell>
+
                         </TableRow>
                      </TableHead>
                      <TableBody>
@@ -61,16 +65,14 @@ const Article = () => {
                                     <TableCell align="center">{article.publishedAt}</TableCell>
                                     <TableCell align="center">
                                        <Tooltip title="Edit">
-                                          <Button variant="contained"
-                                             color="secondary"><Link to={`UpdateNews/${article.id}`}>Edit</Link></Button>
+                                          <IconButton><Link to={`UpdateNews/${article.id}`}><EditIcon /></Link></IconButton>
                                        </Tooltip>
-                                    </TableCell>
-                                    <TableCell align="center">
                                        <Tooltip title="Delete">
-                                          <Button variant="contained"
-                                             color="primary" onClick={() => handleDelete(article.id)} >Delete</Button>
+                                          <IconButton onClick={() => handleDelete(article.id)} ><DeleteIcon color="secondary" /></IconButton>
                                        </Tooltip>
                                     </TableCell>
+
+
                                  </TableRow>
                               )
                            })

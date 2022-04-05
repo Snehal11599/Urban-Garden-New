@@ -6,7 +6,7 @@ export default function NavBar() {
       <div className="container-fluid">
         <img
           src="assets/HomeImages/gacoicon.png"
-          alt="logo"
+          alt="logo"  jj
           style={{ paddingLeft: "10px" }}
         />
         <div
