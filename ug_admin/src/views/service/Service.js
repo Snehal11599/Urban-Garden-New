@@ -1,4 +1,4 @@
-import { TableContainer, Table, TableBody, TableCell, TableHead, TableRow, Paper, IconButton, Tooltip } from "@material-ui/core"
+import { TableContainer, Table, TableBody, TableCell, TableHead, TableRow, Paper, IconButton, Tooltip,Button } from "@material-ui/core"
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { Link } from "react-router-dom";
@@ -33,6 +33,12 @@ const Service = () => {
 
    return (
       <div className="content">
+          <Link to='AddService'>
+            <Button variant="contained"
+               color="primary">
+               Create Service
+            </Button>
+         </Link>
          <Row>
             <Col md="20">
 

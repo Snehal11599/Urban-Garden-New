@@ -10,11 +10,22 @@ import AddNews from "./views/news/AddNews";
 
 
 var routes = [
+
+  
   {
     path: "/dashboard",
     name: "Dashboard",
     icon: "nc-icon nc-bank",
     component: Dashboard,
+    layout: "/admin",
+  
+
+  },
+  {
+    path: "/News",
+    name: "News Table",
+    icon: "nc-icon nc-paper",
+    component: News,
     layout: "/admin",
   },
   {
@@ -30,13 +41,7 @@ var routes = [
     component: UpdateNews,
     layout: "/admin",
   }
-  , {
-    path: "/News",
-    name: "News Table",
-    icon: "nc-icon nc-paper",
-    component: News,
-    layout: "/admin",
-  },
+  , 
   {
     path: "/Service",
     name: "Service_Table",

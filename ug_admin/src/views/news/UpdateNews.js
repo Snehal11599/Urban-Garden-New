@@ -2,6 +2,8 @@ import { Typography, Box, Grid, TextField, Button } from "@material-ui/core"
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import News from "./News";
+
 const UpdateNews = () => {
   const { id } = useParams();
 
@@ -25,7 +27,7 @@ const UpdateNews = () => {
     }
     getService();
   }, [id]);
-
+  const [status, setStatus] = useState();
   function onTextFieldChange(e) {
     setService({
       ...service,
@@ -37,12 +39,14 @@ const UpdateNews = () => {
     e.preventDefault()
     try {
       await axios.put(`http://localhost:3001/articles/${id}`, service)
-
+      setStatus(true);
     } catch (error) {
       console.log("Something is Wrong");
     }
   }
-
+  if (status) {
+    return<News/>
+  }
 
   return (
     <>
@@ -82,6 +86,7 @@ const UpdateNews = () => {
               </Grid>
             </Grid>
             <Box m={3}>
+              
               <Button type="submit" variant="contained" color="primary" fullWidth onClick={e => onFormSubmit(e)} >Update</Button>
             </Box>
           </form>
