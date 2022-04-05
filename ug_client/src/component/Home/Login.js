@@ -10,10 +10,9 @@ const Login = ({ onSubmit }) => {
       window.open("http://localhost:3000/ReceiveQuote");
     }
     else {
-      <h6> not valid</h6>
-    }
+      <h6> not valid</h6>}
 }
-  return (
+return (
     <Form onSubmit={onSubmit}>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
@@ -35,20 +34,11 @@ const Login = ({ onSubmit }) => {
       <Form.Group controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Remember Me!" />
       </Form.Group>
-<<<<<<< Updated upstream
-      <NavLink className="nav-link" to="/ReceiveQuote">
-        <Button variant="primary" type="submit" block>
-          Login
-        </Button>
-        </NavLink>
-     
-=======
       {/* <NavLink className="nav-link" to="/ReceiveQuote"> */}
       <Button onClick={multiuser} variant="primary" type="submit" block>
         Login
       </Button>
       {/* </NavLink> */}
->>>>>>> Stashed changes
     </Form>
   );
 };
