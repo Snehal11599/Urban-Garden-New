@@ -9,8 +9,7 @@ const AddService = () => {
         GardeningAddress: "",
         GardeningArea: "",
        GardenImages:"",
-        WorkDescription:"",
-  });
+        WorkDescription:"",});
 const [status, setStatus] = useState();
 function onTextFieldChange(e) {
     setService({
@@ -29,7 +28,7 @@ function onTextFieldChange(e) {
       console.log("Something is Wrong");
     }
   }
-  if (status) {
+  if (status) 
     return <ReceiveQuote/>
   }
   return (
@@ -84,5 +83,4 @@ function onTextFieldChange(e) {
     </>
   )
 }
-
 export default AddService

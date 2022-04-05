@@ -10,10 +10,9 @@ const Login = ({ onSubmit }) => {
       window.open("http://localhost:3000/ReceiveQuote");
     }
     else {
-      <h6> not valid</h6>
-    }
+      <h6> not valid</h6>}
 }
-  return (
+return (
     <Form onSubmit={onSubmit}>
       <Form.Group controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
