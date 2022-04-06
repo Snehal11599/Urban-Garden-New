@@ -16,7 +16,19 @@ const ServiceCard = () => {
 
   return (
     <div>
+       <div className="section-heading text-center mb-2"
+      style={{ margin: "70px", padding: "5px", font: "serif" }}> 
+      <h1>Complete Garden Solutions </h1>
+      <div
+        className="subheading text-center mb-2"
+        style={{ font: "serif", color: "#82B440", size: "16px", paddingTop: "5px" }} >
+        <h4>
+         _____Services _____
+        </h4>
+        </div>
+      </div>
       <div className="row row-cols-1 row-cols-md-3 g-4">
+        
         {
           service.map((service) => {
             return (

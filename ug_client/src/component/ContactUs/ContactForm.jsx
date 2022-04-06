@@ -14,7 +14,7 @@ const ContactForm = () => {
     }
     return (
         <><div className="section-heading text-center mb-4">
-                <h1 className='py-4'>Send Us A Message</h1>
+                <h1 className='py-4'>Get In Touch</h1>
                 <GiThreeLeaves size="3rem" style={style} />
                 <p className="text-muted">Consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta.</p>
                 <p className="text-muted">Quisque ut nulla at nunc lacinia.</p>

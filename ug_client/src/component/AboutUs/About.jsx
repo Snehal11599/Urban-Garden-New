@@ -6,6 +6,17 @@ export default function About() {
 
     <div>
       <Banner title="About Us" />
+      <div className="section-heading text-center mb-2"
+      style={{ margin: "70px", padding: "10px", font: "serif" }}> 
+      <h2> Hello..! </h2>
+      <div
+        className="subheading text-center mb-2"
+        style={{ font: "Notoserif", color: "#82B440", size: "16px", paddingTop: "10px" }} >
+        <h4>
+         _____Who We Are______
+        </h4>
+        </div>
+      </div>
       <div className="card mb-3 " >
         <div className="row g-0">
           <div className="col-md-4">
