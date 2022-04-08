@@ -1,11 +1,15 @@
 import React from 'react'
 import Banner from '../../CommonComponent/Banner'
+import { Row, Col } from "reactstrap";
 
 const Testimonials = () => {
   return (
-    <div>
-      <Banner title="Testimonials" />
-      <div className="card mb-3" style={{ width: "540px" }}>
+    <>
+    <Banner title="Testimonials" />
+    <Row>
+      <Col>
+    
+      <div className="card mb-3" style={{ width: "540px",marginLeft: '10rem'  }}>
         <div className="row g-0">
           <div className="col-md-4">
             <img src="/assets/Testimonials/team-img1.jpg" className="img-fluid rounded-start" alt="..." />
@@ -19,7 +23,7 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-      <div className="card mb-3" style={{ width: "540px" }}>
+      <div className="card mb-3" style={{ width: "540px",marginLeft: '10rem'  }}>
         <div className="row g-0">
           <div className="col-md-4">
             <img src="/assets/Testimonials/team-img2.jpg" className="img-fluid rounded-start" alt="..." />
@@ -33,6 +37,8 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
+      </Col>
+      <Col>
       <div className="card mb-3" style={{ width: "540px" }}>
         <div className="row g-0">
           <div className="col-md-4">
@@ -61,7 +67,9 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-    </div>
+      </Col>
+    </Row>
+    </>
   )
 }
 export default Testimonials

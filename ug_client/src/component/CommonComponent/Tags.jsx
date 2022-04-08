@@ -3,8 +3,11 @@ import { NavLink } from 'react-router-dom'
 
 const Tags = () => {
     return (
-        <div>
-            <h1>Tags</h1>
+        <div className="card" style={{ marginLeft:"3rem"}} >
+                <div className="card-body">
+                    <h4 className="card-title">Tags</h4>
+                    
+                
             <ul className="nav nav-tabs">
                 <li>
                 <NavLink className="nav-link" to="/">business</NavLink>
@@ -25,6 +28,7 @@ const Tags = () => {
                 <NavLink className="nav-link" to="/">attorney</NavLink>
                 </li>
             </ul>
+        </div>
         </div>
     )
 }

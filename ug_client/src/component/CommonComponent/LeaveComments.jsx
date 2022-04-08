@@ -30,7 +30,7 @@ const LeaveComments = () => {
                         <div className="help-block with-errors"></div>
                     </div>
                     <div className="form-group">
-                        <button type="submit" className="btn btn-success">POST COMMENTS</button>
+                        <button type="submit" className="btn" style={{backgroundColor:"#8bc34a"}}>POST COMMENTS</button>
                     </div>
                 </form>
             </div>

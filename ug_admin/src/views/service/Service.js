@@ -47,7 +47,7 @@ const Service = () => {
                      <TableHead>
                         <TableRow style={{ backgroundColor: "#616161" }}>
                            <TableCell align="center" >Id</TableCell>
-                           <TableCell align="center" >Title</TableCell>
+                           <TableCell align="center" >Title</TableCell>   
                            <TableCell align="center" >Description</TableCell>
                            <TableCell align="center" >Image</TableCell>
                            <TableCell align="center" >Action</TableCell>
