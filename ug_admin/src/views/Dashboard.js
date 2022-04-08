@@ -19,7 +19,6 @@
 import React from "react";
 // react plugin used to create charts
 import { Line, Pie } from "react-chartjs-2";
-import Divider from "@material-ui/core/Divider";
 // reactstrap components
 import {
   Card,
@@ -41,7 +40,7 @@ function Dashboard() {
   return (
     <>
       <div className="content">
-      <Divider />
+
         <Row>
           <Col lg="3" md="6" sm="6">
             <Card className="card-stats">
@@ -226,7 +225,7 @@ function Dashboard() {
             </Card>
           </Col>
         </Row>
-        <Divider />
+
       </div>
     </>
   );

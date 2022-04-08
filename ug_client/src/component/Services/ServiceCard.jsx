@@ -1,6 +1,18 @@
-import React, { useEffect, useState } from "react";
-
+import React, { useEffect, useState,useRef } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import {ArrowBackIos, ArrowForwardIos} from "@material-ui/icons"
 const ServiceCard = () => {
+  const sliderRef = useRef(null)
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+
+  };
   const [service, setService] = useState([]);
 
   //function for get service card data
@@ -13,28 +25,24 @@ const ServiceCard = () => {
   useEffect(() => {
     getService();
   }, []);
+  
 
   return (
-    <div>
-       <div className="section-heading text-center mb-2"
-      style={{ margin: "70px", padding: "5px", font: "serif" }}> 
-      <h1>Complete Garden Solutions </h1>
-      <div
-        className="subheading text-center mb-2"
-        style={{ font: "serif", color: "#82B440", size: "16px", paddingTop: "5px" }} >
-        <h4>
-         _____Services _____
-        </h4>
-        </div>
+    <div >
+      <div className="" style={{justifyContent:"space-between",display:"flex",cursor:"pointer"}}
+      onClick={() => sliderRef.current.slickPrev()}
+      >
+        <div className=""><ArrowBackIos/></div>
+        <div className=""onClick={() => sliderRef.current.slickNext()}><ArrowForwardIos/></div>
       </div>
-      <div className="row row-cols-1 row-cols-md-3 g-4">
+    <Slider ref={sliderRef} {...settings}>
         
         {
           service.map((service) => {
             return (
-              <div >
-                <div className="col">
-                  <div className="card h-100">
+             
+                <div className="col" >
+                  <div className="card h-100"style={{width:"25rem",margin:"30"}}>
                     <img src={service.urltoimage} className="card-img-top" alt="..." />
                     <div className="card-body">
                       <h5 className="card-title">{service.title}</h5>
@@ -45,11 +53,13 @@ const ServiceCard = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+            
             );
           })}
+          </Slider>
+         
       </div>
-    </div>
+  
   );
 };
 

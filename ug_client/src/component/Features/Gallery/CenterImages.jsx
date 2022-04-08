@@ -1,9 +1,20 @@
 import React from 'react'
+import Slider from "react-slick";
 
 const Gallery = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear"
+      };
     return (
         <div>
-            <div className="row row-cols-1 row-cols-md-4 g-4">
+            <Slider {...settings}>
                 <div className="col">
                     <div className="thumbnail">
                         <img src="/assets/Gallery/tunnel.jpg" alt="Lights" style={{ width: "100%" }} />
@@ -54,11 +65,12 @@ const Gallery = () => {
                         <img src="/assets/Gallery/gallery-8.jpg" alt="Fjords" style={{ width: "100%" }} />
                     </div>
                 </div>
+                </Slider>
             </div>
 
 
 
-        </div>
+    
     )
 }
 

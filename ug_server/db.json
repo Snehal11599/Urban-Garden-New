@@ -29,16 +29,34 @@
       "urltoimage": "https://html.rometheme.pro/gaco/images/services-img-1.jpg"
     },
     {
-      "id": 2,
+      "id": 3,
+      "title": " Garden Care",
+      "decription": "Best garden, lawn maintenance contractors in Mumbai for maintaining the garden naturally by watering, staking, mulching and other garden care methods by expert professionals.",
+      "urltoimage": " https://html.rometheme.pro/gaco/images/services-img-3.jpg"
+    },
+    {
+      "id": 4,
       "title": "Planting & Removal",
       "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.",
       "urltoimage": "https://html.rometheme.pro/gaco/images/services-img-2.jpg"
     },
     {
-      "id": 3,
-      "title": "Garden Care and planting gardening jh",
-      "decription": "Best garden, lawn maintenance contractors in Mumbai for maintaining the garden naturally by watering, staking, mulching and other garden care methods by expert professionals.",
-      "urltoimage": " https://html.rometheme.pro/gaco/images/services-img-3.jpg"
+      "id": 5,
+      "title": "Irrigation & Drainage",
+      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.",
+      "urltoimage": "https://html.rometheme.pro/gaco/images/services-img-4.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Stone and Hardscaping",
+      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.",
+      "urltoimage": "https://html.rometheme.pro/gaco/images/services-img-5.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Rubbish Removal",
+      "decription": "Dolor sit amet dolor gravida placerat liberolorem ipsum dolor consectetur adipiscing elit, sed do eiusmod.",
+      "urltoimage": "https://html.rometheme.pro/gaco/images/services-img-6.jpg"
     }
   ],
   "Register": [

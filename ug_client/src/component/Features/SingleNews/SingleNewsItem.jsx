@@ -2,6 +2,7 @@ import React from 'react'
 import LatestPost from '../../CommonComponent/LatestPost'
 import LeaveComments from '../../CommonComponent/LeaveComments'
 import NewsItem from '../../CommonComponent/NewsItem'
+import { Row, Col } from "reactstrap";
 import './SingleNewsItem.css'
 import Tags from '../../CommonComponent/Tags'
 
@@ -12,13 +13,13 @@ const SingleNewsItem = () => {
     return (
         <>
             <div className='container' >
-                <div className='row'>
-                    <div className='col-sm-4 col-md-12 col-lg-8' >
+                <Row>
+                    <Col style={{ width: "80rem" }}>
                         <img src="/assets/Singlenews/NewsItem.jpg" alt="Norway" style={{ height: "500px", width: "100%" }} />
-                        <div className="text-block">
+                        {/* <div className="text-block" >
                             <h4>30</h4>
                             <h4>May</h4>
-                        </div>
+                        </div> */}
                         <h1>Person talking to each other</h1>
                         <p>Posted by Rome Doel!</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -34,7 +35,7 @@ const SingleNewsItem = () => {
                             ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                             fugiat nulla pariatur. Excepteur  sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
-                        <div className="card mb-3" style={{ maxWidth: "540px" }}>
+                        <div className="card mb-3" style={{ maxWidth: "600px" }}>
                             <div className="row g-0">
                                 <div className="col-md-4">
                                     <img src="/assets/Singlenews/author.jpg" className="img-fluid rounded-start" alt="..." />
@@ -49,14 +50,16 @@ const SingleNewsItem = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4" >
+                        </Col>
+                        <Col >
                             <LatestPost/>
-                            <Tags />
                             <NewsItem/>
-                        </div>
-                    </div>
+                            <br></br>
+                            <Tags />
+                        </Col>
+                   
 
-                </div>
+                </Row>
                 <LeaveComments />
             </div>
 

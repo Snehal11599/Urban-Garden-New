@@ -30,7 +30,7 @@ export default function NavBar() {
                 aria-expanded="false">
                 Features
               </NavLink>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul className="dropdown-menu"style={{ backgroundColor: "#8bc34a" }} aria-labelledby="navbarDropdown">
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/gallery">
                     Gallery
@@ -104,7 +104,7 @@ export default function NavBar() {
         </div>
         <li className=" gap-10 text-white" >
               <button className="btn" style={{  backgroundColor: "#82B440"}}  >
-                <NavLink className="hhh" to="/Register">
+                <NavLink className="black" to="/Register">
                 Register
                 </NavLink>
               </button>

@@ -15,6 +15,10 @@ import Login from './component/Home/Login';
 import Register from'./component/Home/Register';
 import ReceiveQuote from './component/Quote/ReceiveQuote';
 import AddService from './component/Quote/AddQuotes';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+
 function App() {
   return (
     <>
@@ -33,8 +37,6 @@ function App() {
         <Route exact path='/Register' element={<Register/>}/>
         <Route exact path='/ReceiveQuote' element={<ReceiveQuote/>}/>
         <Route exact path='/AddQuotes' element={<AddService/>}/>
-        
-
         </Routes>
        <Footer /> 
 

@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import LatestPost from '../../CommonComponent/LatestPost'
+import { Row, Col } from "reactstrap";
+import NewsItem from '../../CommonComponent/NewsItem'
+import Tags from '../../CommonComponent/Tags'
 
 
 const NewsCard = () => {
@@ -16,30 +20,45 @@ const NewsCard = () => {
     }, [])
 
     return (
-        <div>
-            <div className="card" style={{ width: "50rem" }}>
-                {
-                    posts.map(post => {
-                        return <div>
-                            <img src={post.urlToImage} className="card-img-top" alt="..." />
-                            <h3 className="card-title">{post.title}</h3>
-                            <p className="card-text">{post.url}</p>
-                            <p className="card-text">{post.desp}</p>
-                            <p className="card-text">{post.content}</p>
-                            <p className="card-text">{post.publishedAt}</p>
-                            <a href="/" className="btn btn-primary">Go somewhere</a>
+        <>
+            <div className='container' >
+                <Row>
+                    <Col style={{ width: "50rem"}} >
+                        <div className="card"  >
+                            {
+                                posts.map(post => {
+                                    return <div>
+                                        <img src={post.urlToImage} className="card-img-top" alt="..." />
+                                        <h3 className="card-title">{post.title}</h3>
+                                        <p className="card-text">{post.url}</p>
+                                        <p className="card-text">{post.desp}</p>
+                                        <p className="card-text">{post.content}</p>
+                                        <p className="card-text">{post.publishedAt}</p>
+                                        <a href="/" className="btn btn-primary"style={{  backgroundColor: "#82B440"}} >Go somewhere</a>
+                                    </div>
+                                }
+                                )}
+                        </div><br></br>
+                        <div className="'col-xs-3 '" style={{ margin: "left:20 px" }}>
+                            <button className="btn btn-outline-success text-black " style={{ marginRight: "20px" }}>Previous</button>
+                            <button className="btn btn-outline-success text-black " style={{ marginRight: "20px", Color: "#82B440" }} type="button">1</button>
+                            <button className="btn btn-outline-success text-black " style={{ marginRight: "20px" }} type="button">2</button>
+                            <button className="btn btn-outline-success text-black " style={{ marginRight: "20px" }} type="button">3</button>
+                            <button  className="btn btn-outline-success text-black ">Next</button>
                         </div>
-                    }
-                    )}
-            </div><br></br>
-            <div className="'col-xs-3'" style={{ margin: "left:30 px" }}>
-                <button type="button" className="btn btn-primary btn-lg" style={{ marginRight: "20px" }}>Previous</button>
-                <button className="btn btn-primary" style={{ marginRight: "20px" }} type="button">1</button>
-                <button className="btn btn-primary" style={{ marginRight: "20px" }} type="button">2</button>
-                <button className="btn btn-primary" style={{ marginRight: "20px" }} type="button">3</button>
-                <button type="button" className="btn btn-primary btn-lg">Next</button>
+                    </Col><br></br>
+                    <Col style={{ width: "50rem" }} >
+
+                        <LatestPost />
+                        <NewsItem />
+                        <br></br>
+                        <Tags />
+
+                    </Col>
+                </Row>
             </div>
-        </div>
+
+        </>
     )
 }
 

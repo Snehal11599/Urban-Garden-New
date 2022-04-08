@@ -8,7 +8,7 @@ const AddService = () => {
   const [service, setService] = useState({
     id: "",
     title: "",
-    decription: "",
+    decription: "",  
     urltoimage: ""
   });
 
