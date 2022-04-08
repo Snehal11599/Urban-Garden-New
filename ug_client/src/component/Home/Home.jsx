@@ -5,14 +5,16 @@ import OurLatestBlog from "./OurLatestBlog";
 import OurService from "./OurService";
 import RecentProject from "./RecentProject";
 import OurPricingPlan from "./OurPricingPlan";
+import VideoPlayer from "./VideoPlayer";
 export default function Home() {
   return (
     <div>
       <div>
         <Carousel />
         <CenterCard />
-        </div>
+      </div>
       <OurService/>
+      <VideoPlayer/>
       <RecentProject/>
       <OurLatestBlog/>
       <OurPricingPlan/>

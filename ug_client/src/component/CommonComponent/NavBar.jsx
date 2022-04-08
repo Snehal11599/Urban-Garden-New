@@ -59,7 +59,7 @@ export default function NavBar() {
               </ul>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">
+              <NavLink className="nav-link" to="/Aboutus">
                 About
               </NavLink>
             </li>
@@ -73,9 +73,6 @@ export default function NavBar() {
                 Contact Us
               </NavLink>
             </li>
-
-
-
             <li className="nav-item dropdown">
               <NavLink
                 className="nav-link dropdown-toggle"

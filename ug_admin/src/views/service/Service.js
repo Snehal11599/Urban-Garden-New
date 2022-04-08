@@ -35,7 +35,7 @@ const Service = () => {
       <div className="content">
           <Link to='AddService'>
             <Button variant="contained"
-               color="primary">
+               color="secondary">
                Create Service
             </Button>
          </Link>
@@ -45,7 +45,7 @@ const Service = () => {
                <TableContainer component={Paper}>
                   <Table>
                      <TableHead>
-                        <TableRow style={{ backgroundColor: "#616161" }}>
+                        <TableRow style={{ backgroundColor: "#3f51b5" }}>
                            <TableCell align="center" >Id</TableCell>
                            <TableCell align="center" >Title</TableCell>
                            <TableCell align="center" >Description</TableCell>

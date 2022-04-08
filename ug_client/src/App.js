@@ -2,7 +2,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom'
 import NavBar from './component/CommonComponent/NavBar';
 import Home from './component/Home/Home'
-import About from './component/AboutUs/About';
+import Aboutus from './component/AboutUs/Aboutus';
 import Service from './component/Services/Service';
 import Footer from './component/CommonComponent/Footer';
 import ContactUs from './component/ContactUs/ContactUs';
@@ -15,13 +15,15 @@ import Login from './component/Home/Login';
 import Register from'./component/Home/Register';
 import ReceiveQuote from './component/Quote/ReceiveQuote';
 import AddService from './component/Quote/AddQuotes';
+import Header from './component/CommonComponent/Header';
 function App() {
   return (
     <>
+    <Header/>
       <NavBar/>
-       <Routes>
+      <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
+        <Route path="/Aboutus" element={<Aboutus/>}/>
         <Route path="/service" element={<Service/>}/>
         <Route exact path="/contactus" element={<ContactUs/>}/>
         <Route exact path='/gallery' element={<Gallery />} />
@@ -33,13 +35,8 @@ function App() {
         <Route exact path='/Register' element={<Register/>}/>
         <Route exact path='/ReceiveQuote' element={<ReceiveQuote/>}/>
         <Route exact path='/AddQuotes' element={<AddService/>}/>
-        
-
-        </Routes>
-       <Footer /> 
-
-    </>
+      </Routes>
+       <Footer /> </>
   )
 }
-
 export default App;

@@ -41,7 +41,7 @@ const Article = () => {
                <TableContainer component={Paper}>
                   <Table>
                      <TableHead>
-                        <TableRow style={{ backgroundColor: "#616161" }}>
+                        <TableRow style={{ backgroundColor: "#3f51b5" }}>
                            <TableCell align="center" >Id</TableCell>
                            <TableCell align="center" >Author</TableCell>
                            <TableCell align="center" >Title</TableCell>
@@ -56,7 +56,7 @@ const Article = () => {
                         {
                            article.map((article, i) => {
                               return (
-                                 <TableRow key={i}>
+                                 <TableRow key={i}  >
                                     <TableCell align="center">{i + 1}</TableCell>
                                     <TableCell align="center">{article.author}</TableCell>
                                     <TableCell align="center">{article.title}</TableCell>
